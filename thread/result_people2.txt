@@ -1,0 +1,866 @@
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.4.154 aarch64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.4.154 aarch64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+Last login: Thu Feb 11 21:20:51 2016 from 192.168.123.38
+
+
+ * Support:        https://ubuntu.com/advantage
+Last login: Thu Feb 11 21:20:57 2016 from 192.168.123.38
+roslaunch riki_follower follower.launch
+exit
+
+roslaunch riki_follower follower.launch
+exit
+
+firefly@rikirobot:~$ roslaun
+firefly@rikirobot:~$ roslaunch rik
+ch riki_follower follower.launch
+
+i_follower follower.launch
+
+... logging to /home/firefly/.ros/log/58982bd0-d105-11e5-b974-cc4b7392489e/roslaunch-rikirobot-18452.log
+
+... logging to /home/firefly/.ros/log/58a15638-d105-11e5-b17a-cc4b7392489e/roslaunch-rikirobot-18462.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/firefly/catkin_ws/src/rikirobot_project/riki_follower/launch/follower.launch
+
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/firefly/catkin_ws/src/rikirobot_project/riki_follower/launch/follower.launch
+
+[1mstarted roslaunch server http://192.168.123.213:44869/[0m
+
+[1mstarted roslaunch server http://192.168.123.213:41229/[0m
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /camera/camera_nodelet_manager/num_worker_threads: 4
+ * /camera/depth_rectify_depth/interpolation: 0
+ * /camera/driver/auto_exposure: True
+ * /camera/driver/auto_white_balance: True
+ * /camera/driver/bootorder: 0
+ * /camera/driver/color_depth_synchronization: False
+ * /camera/driver/depth_camera_info_url: 
+ * /camera/driver/depth_frame_id: camera_depth_opti...
+ * /camera/driver/depth_registration: False
+ * /camera/driver/device_id: #1
+ * /camera/driver/devnums: 1
+ * /camera/driver/rgb_camera_info_url: 
+ * /camera/driver/rgb_frame_id: camera_rgb_optica...
+ * /riki_follower/enabled: True
+ * /riki_follower/goal_z: 0.7
+ * /riki_follower/max_x: 0.35
+ * /riki_follower/max_y: 0.5
+ * /riki_follower/max_z: 1.3
+ * /riki_follower/min_x: -0.35
+ * /riki_follower/min_y: 0.1
+ * /riki_follower/x_scale: 2.5
+ * /riki_follower/x_tol: 0.15
+ * /riki_follower/z_scale: 2.0
+ * /riki_follower/z_tol: 0.1
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+
+NODES
+  /camera/
+    camera_nodelet_manager (nodelet/nodelet)
+    depth_metric (nodelet/nodelet)
+    depth_metric_rect (nodelet/nodelet)
+    depth_points (nodelet/nodelet)
+    depth_rectify_depth (nodelet/nodelet)
+    depth_registered_sw_metric_rect (nodelet/nodelet)
+    driver (nodelet/nodelet)
+    points_xyzrgb_sw_registered (nodelet/nodelet)
+    register_depth_rgb (nodelet/nodelet)
+    rgb_rectify_color (nodelet/nodelet)
+  /
+    camera_base_link (tf/static_transform_publisher)
+    camera_base_link1 (tf/static_transform_publisher)
+    camera_base_link2 (tf/static_transform_publisher)
+    camera_base_link3 (tf/static_transform_publisher)
+    riki_follower (nodelet/nodelet)
+
+auto-starting new master
+[1mprocess[master]: started with pid [18482][0m
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /camera/camera_nodelet_manager/num_worker_threads: 4
+ * /camera/depth_rectify_depth/interpolation: 0
+ * /camera/driver/auto_exposure: True
+ * /camera/driver/auto_white_balance: True
+ * /camera/driver/bootorder: 0
+ * /camera/driver/color_depth_synchronization: False
+ * /camera/driver/depth_camera_info_url: 
+ * /camera/driver/depth_frame_id: camera_depth_opti...
+ * /camera/driver/depth_registration: False
+ * /camera/driver/device_id: #1
+ * /camera/driver/devnums: 1
+ * /camera/driver/rgb_camera_info_url: 
+ * /camera/driver/rgb_frame_id: camera_rgb_optica...
+ * /riki_follower/enabled: True
+ * /riki_follower/goal_z: 0.7
+ * /riki_follower/max_x: 0.35
+ * /riki_follower/max_y: 0.5
+ * /riki_follower/max_z: 1.3
+ * /riki_follower/min_x: -0.35
+ * /riki_follower/min_y: 0.1
+ * /riki_follower/x_scale: 2.5
+ * /riki_follower/x_tol: 0.15
+ * /riki_follower/z_scale: 2.0
+ * /riki_follower/z_tol: 0.1
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+
+NODES
+  /camera/
+    camera_nodelet_manager (nodelet/nodelet)
+    depth_metric (nodelet/nodelet)
+    depth_metric_rect (nodelet/nodelet)
+    depth_points (nodelet/nodelet)
+    depth_rectify_depth (nodelet/nodelet)
+    depth_registered_sw_metric_rect (nodelet/nodelet)
+    driver (nodelet/nodelet)
+    points_xyzrgb_sw_registered (nodelet/nodelet)
+    register_depth_rgb (nodelet/nodelet)
+    rgb_rectify_color (nodelet/nodelet)
+  /
+    camera_base_link (tf/static_transform_publisher)
+    camera_base_link1 (tf/static_transform_publisher)
+    camera_base_link2 (tf/static_transform_publisher)
+    camera_base_link3 (tf/static_transform_publisher)
+    riki_follower (nodelet/nodelet)
+
+auto-starting new master
+[1mprocess[master]: started with pid [18478][0m
+
+ERROR: Unable to start XML-RPC server, port 11311 is already in use
+[1mROS_MASTER_URI=http://192.168.123.213:11311[0m
+
+
+Unhandled exception in thread started by <bound method XmlRpcNode.run of <rosgraph.xmlrpc.XmlRpcNode object at 0x7f8f0c0c10>>
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/xmlrpc.py", line 215, in run
+    self._run()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/xmlrpc.py", line 284, in _run
+    self._run_init()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/xmlrpc.py", line 234, in _run_init
+    self.server = ThreadingXMLRPCServer((bind_address, port), log_requests)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/xmlrpc.py", line 115, in __init__
+    SimpleXMLRPCServer.__init__(self, addr, SilenceableXMLRPCRequestHandler, log_requests)
+  File "/usr/lib/python2.7/SimpleXMLRPCServer.py", line 593, in __init__
+    SocketServer.TCPServer.__init__(self, addr, requestHandler, bind_and_activate)
+  File "/usr/lib/python2.7/SocketServer.py", line 417, in __init__
+    self.server_bind()
+  File "/usr/lib/python2.7/SocketServer.py", line 431, in server_bind
+    self.socket.bind(self.server_address)
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 98] Address already in use
+[1mROS_MASTER_URI=http://192.168.123.213:11311[0m
+]2;/home/firefly/catkin_ws/src/rikirobot_project/riki_follower/launch/follower.launch http://192.168.123.213:11311
+[31mrun_id on parameter server does not match declared run_id: 58a15638-d105-11e5-b17a-cc4b7392489e vs 58982bd0-d105-11e5-b974-cc4b7392489e[0m
+[31mThe traceback for the exception was written to the log file[0m
+[master] killing on exit
+
+]2;/home/firefly/catkin_ws/src/rikirobot_project/riki_follower/launch/follower.launch http://192.168.123.213:11311
+[1msetting /run_id to 58a15638-d105-11e5-b17a-cc4b7392489e[0m
+
+[1mprocess[rosout-1]: started with pid [18515][0m
+started core service [/rosout]
+[1mprocess[camera/camera_nodelet_manager-2]: started with pid [18529][0m
+[1mprocess[camera/driver-3]: started with pid [18533][0m
+[1mprocess[camera/rgb_rectify_color-4]: started with pid [18534][0m
+[1mprocess[camera/depth_rectify_depth-5]: started with pid [18535][0m
+[1mprocess[camera/depth_metric_rect-6]: started with pid [18537][0m
+[1mprocess[camera/depth_metric-7]: started with pid [18544][0m
+[1mprocess[camera/depth_points-8]: started with pid [18551][0m
+[1mprocess[camera/register_depth_rgb-9]: started with pid [18560][0m
+[1mprocess[camera/points_xyzrgb_sw_registered-10]: started with pid [18574][0m
+[1mprocess[camera/depth_registered_sw_metric_rect-11]: started with pid [18587][0m
+
+firefly@rikirobot:~$ exit
+
+[1mprocess[camera_base_link-12]: started with pid [18601][0m
+[0m[ INFO] [1455225663.113899947]: Initializing nodelet with 4 worker threads.[0m
+[1mprocess[camera_base_link1-13]: started with pid [18609][0m
+[1mprocess[camera_base_link2-14]: started with pid [18624][0m
+[1mprocess[camera_base_link3-15]: started with pid [18637][0m
+[1mprocess[riki_follower-16]: started with pid [18649][0m
+
+logout
+
+[0m[ INFO] [1455225663.744681352]: Device "1d27/0601@1/5" found.[0m
+
+
+Warning: USB events thread - failed to set priority. This might cause loss of data...
+
+
+
+
+
+
+
+
+
+
+
+[0m[ INFO] [1455225667.238311437]: Starting depth stream.[0m
+
+
+[0m[ INFO] [1455225667.688317080]: using default calibration URL[0m
+
+
+[0m[ INFO] [1455225667.691958679]: camera calibration URL: file:///home/firefly/.ros/camera_info/depth_Astra_Orbbec.yaml[0m
+[0m[ INFO] [1455225667.692908812]: Unable to open camera calibration file [/home/firefly/.ros/camera_info/depth_Astra_Orbbec.yaml][0m
+[33m[ WARN] [1455225667.693310099]: Camera calibration file /home/firefly/.ros/camera_info/depth_Astra_Orbbec.yaml not found.[0m
+[0m[ INFO] [1455225667.743475052]: Not enough points(1857) detected, stopping the robot[0m
+
+
+
+[0m[ INFO] [1455225668.767279742]: Not enough points(3018) detected, stopping the robot[0m
+
+
+
+[0m[ INFO] [1455225669.812313539]: Not enough points(3314) detected, stopping the robot[0m
+
+[0m[ INFO] [1455225670.875544586]: Not enough points(2377) detected, stopping the robot[0m
+
+[0m[ INFO] [1455225671.908442009]: Not enough points(2254) detected, stopping the robot[0m
+
+[0m[ INFO] [1455225672.930013802]: Not enough points(2717) detected, stopping the robot[0m
+
+
+[0m[ INFO] [1455225673.936728550]: Not enough points(2617) detected, stopping the robot[0m
+
+[0m[ INFO] [1455225674.982089064]: Not enough points(1050) detected, stopping the robot[0m
+
+[0m[ INFO] [1455225676.005851097]: Not enough points(1854) detected, stopping the robot[0m
+
+[0m[ INFO] [1455225677.057003953]: Not enough points(943) detected, stopping the robot[0m
+
+[0m[ INFO] [1455225677.671464994]: Centroid at 0.174228 0.155000 0.480000 with 17580 points[0m
+
+[0m[ INFO] [1455225678.701081345]: Centroid at 0.211083 0.182362 0.478000 with 22720 points[0m
+
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.4.154 aarch64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+Last login: Thu Feb 11 21:22:30 2016 from 192.168.123.38
+
+roslaunch riki_follower follower.launch
+exit
+
+firefly@rikirobot:~$ ros
+launch riki_follower follower.launch
+
+... logging to /home/firefly/.ros/log/8fc4b394-d105-11e5-836e-cc4b7392489e/roslaunch-rikirobot-20333.log
+
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/firefly/catkin_ws/src/rikirobot_project/riki_follower/launch/follower.launch
+
+[1mstarted roslaunch server http://192.168.123.213:44736/[0m
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /camera/camera_nodelet_manager/num_worker_threads: 4
+ * /camera/depth_rectify_depth/interpolation: 0
+ * /camera/driver/auto_exposure: True
+ * /camera/driver/auto_white_balance: True
+ * /camera/driver/bootorder: 0
+ * /camera/driver/color_depth_synchronization: False
+ * /camera/driver/depth_camera_info_url: 
+ * /camera/driver/depth_frame_id: camera_depth_opti...
+ * /camera/driver/depth_registration: False
+ * /camera/driver/device_id: #1
+ * /camera/driver/devnums: 1
+ * /camera/driver/rgb_camera_info_url: 
+ * /camera/driver/rgb_frame_id: camera_rgb_optica...
+ * /riki_follower/enabled: True
+ * /riki_follower/goal_z: 0.7
+ * /riki_follower/max_x: 0.35
+ * /riki_follower/max_y: 0.5
+ * /riki_follower/max_z: 1.3
+ * /riki_follower/min_x: -0.35
+ * /riki_follower/min_y: 0.1
+ * /riki_follower/x_scale: 2.5
+ * /riki_follower/x_tol: 0.15
+ * /riki_follower/z_scale: 2.0
+ * /riki_follower/z_tol: 0.1
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+
+NODES
+  /camera/
+    camera_nodelet_manager (nodelet/nodelet)
+    depth_metric (nodelet/nodelet)
+    depth_metric_rect (nodelet/nodelet)
+    depth_points (nodelet/nodelet)
+    depth_rectify_depth (nodelet/nodelet)
+    depth_registered_sw_metric_rect (nodelet/nodelet)
+    driver (nodelet/nodelet)
+    points_xyzrgb_sw_registered (nodelet/nodelet)
+    register_depth_rgb (nodelet/nodelet)
+    rgb_rectify_color (nodelet/nodelet)
+  /
+    camera_base_link (tf/static_transform_publisher)
+    camera_base_link1 (tf/static_transform_publisher)
+    camera_base_link2 (tf/static_transform_publisher)
+    camera_base_link3 (tf/static_transform_publisher)
+    riki_follower (nodelet/nodelet)
+
+[1mROS_MASTER_URI=http://192.168.123.213:11311[0m
+]2;/home/firefly/catkin_ws/src/rikirobot_project/riki_follower/launch/follower.launch http://192.168.123.213:11311
+
+[1mprocess[camera/camera_nodelet_manager-1]: started with pid [20350][0m
+[1mprocess[camera/driver-2]: started with pid [20351][0m
+[1mprocess[camera/rgb_rectify_color-3]: started with pid [20352][0m
+[1mprocess[camera/depth_rectify_depth-4]: started with pid [20353][0m
+[1mprocess[camera/depth_metric_rect-5]: started with pid [20365][0m
+[1mprocess[camera/depth_metric-6]: started with pid [20371][0m
+[1mprocess[camera/depth_points-7]: started with pid [20378][0m
+[1mprocess[camera/register_depth_rgb-8]: started with pid [20385][0m
+
+[1mprocess[camera/points_xyzrgb_sw_registered-9]: started with pid [20401][0m
+[0m[ INFO] [1455225765.055651087]: Initializing nodelet with 4 worker threads.[0m
+[1mprocess[camera/depth_registered_sw_metric_rect-10]: started with pid [20415][0m
+[1mprocess[camera_base_link-11]: started with pid [20426][0m
+[1mprocess[camera_base_link1-12]: started with pid [20441][0m
+[1mprocess[camera_base_link2-13]: started with pid [20452][0m
+[1mprocess[camera_base_link3-14]: started with pid [20475][0m
+[0m[ INFO] [1455225765.220879582]: Device "1d27/0601@1/5" found.[0m
+[1mprocess[riki_follower-15]: started with pid [20485][0m
+
+Warning: USB events thread - failed to set priority. This might cause loss of data...
+
+[0m[ INFO] [1455225769.946409124]: Starting depth stream.[0m
+
+[0m[ INFO] [1455225770.411446140]: using default calibration URL[0m
+
+[0m[ INFO] [1455225770.412225647]: camera calibration URL: file:///home/firefly/.ros/camera_info/depth_Astra_Orbbec.yaml[0m
+[0m[ INFO] [1455225770.413034856]: Unable to open camera calibration file [/home/firefly/.ros/camera_info/depth_Astra_Orbbec.yaml][0m
+[33m[ WARN] [1455225770.413460157]: Camera calibration file /home/firefly/.ros/camera_info/depth_Astra_Orbbec.yaml not found.[0m
+[0m[ INFO] [1455225770.464500448]: Centroid at 0.206956 0.181475 0.474000 with 22210 points[0m
+
+[0m[ INFO] [1455225771.489751350]: Centroid at 0.192692 0.178758 0.464000 with 23111 points[0m
+
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.4.154 aarch64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+Last login: Thu Feb 11 21:23:15 2016 from 192.168.123.38
+
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.4.154 aarch64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+Last login: Thu Feb 11 21:23:25 2016 from 192.168.123.38
+
+roslaunch riki_follower follower.launch
+exit
+
+roslaunch riki_follower follower.launch
+exit
+
+firefly@rikirobot:~$ 
+firefly@rikirobot:~$ roslaunch riki_follo
+roslaunch riki_follower follower.launch
+
+wer follower.launch
+
+... logging to /home/firefly/.ros/log/b0c2d8be-d105-11e5-9039-cc4b7392489e/roslaunch-rikirobot-22204.log
+
+... logging to /home/firefly/.ros/log/b0c1abd8-d105-11e5-b689-cc4b7392489e/roslaunch-rikirobot-22200.log
+
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/firefly/catkin_ws/src/rikirobot_project/riki_follower/launch/follower.launch
+
+[1mstarted roslaunch server http://192.168.123.213:45861/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /camera/camera_nodelet_manager/num_worker_threads: 4
+ * /camera/depth_rectify_depth/interpolation: 0
+ * /camera/driver/auto_exposure: True
+ * /camera/driver/auto_white_balance: True
+ * /camera/driver/bootorder: 0
+ * /camera/driver/color_depth_synchronization: False
+ * /camera/driver/depth_camera_info_url: 
+ * /camera/driver/depth_frame_id: camera_depth_opti...
+ * /camera/driver/depth_registration: False
+ * /camera/driver/device_id: #1
+ * /camera/driver/devnums: 1
+ * /camera/driver/rgb_camera_info_url: 
+ * /camera/driver/rgb_frame_id: camera_rgb_optica...
+ * /riki_follower/enabled: True
+ * /riki_follower/goal_z: 0.7
+ * /riki_follower/max_x: 0.35
+ * /riki_follower/max_y: 0.5
+ * /riki_follower/max_z: 1.3
+ * /riki_follower/min_x: -0.35
+ * /riki_follower/min_y: 0.1
+ * /riki_follower/x_scale: 2.5
+ * /riki_follower/x_tol: 0.15
+ * /riki_follower/z_scale: 2.0
+ * /riki_follower/z_tol: 0.1
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+
+NODES
+  /camera/
+    camera_nodelet_manager (nodelet/nodelet)
+    depth_metric (nodelet/nodelet)
+    depth_metric_rect (nodelet/nodelet)
+    depth_points (nodelet/nodelet)
+    depth_rectify_depth (nodelet/nodelet)
+    depth_registered_sw_metric_rect (nodelet/nodelet)
+    driver (nodelet/nodelet)
+    points_xyzrgb_sw_registered (nodelet/nodelet)
+    register_depth_rgb (nodelet/nodelet)
+    rgb_rectify_color (nodelet/nodelet)
+  /
+    camera_base_link (tf/static_transform_publisher)
+    camera_base_link1 (tf/static_transform_publisher)
+    camera_base_link2 (tf/static_transform_publisher)
+    camera_base_link3 (tf/static_transform_publisher)
+    riki_follower (nodelet/nodelet)
+
+
+[1mstarted roslaunch server http://192.168.123.213:37531/[0m
+
+auto-starting new master
+[1mprocess[master]: started with pid [22220][0m
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /camera/camera_nodelet_manager/num_worker_threads: 4
+ * /camera/depth_rectify_depth/interpolation: 0
+ * /camera/driver/auto_exposure: True
+ * /camera/driver/auto_white_balance: True
+ * /camera/driver/bootorder: 0
+ * /camera/driver/color_depth_synchronization: False
+ * /camera/driver/depth_camera_info_url: 
+ * /camera/driver/depth_frame_id: camera_depth_opti...
+ * /camera/driver/depth_registration: False
+ * /camera/driver/device_id: #1
+ * /camera/driver/devnums: 1
+ * /camera/driver/rgb_camera_info_url: 
+ * /camera/driver/rgb_frame_id: camera_rgb_optica...
+ * /riki_follower/enabled: True
+ * /riki_follower/goal_z: 0.7
+ * /riki_follower/max_x: 0.35
+ * /riki_follower/max_y: 0.5
+ * /riki_follower/max_z: 1.3
+ * /riki_follower/min_x: -0.35
+ * /riki_follower/min_y: 0.1
+ * /riki_follower/x_scale: 2.5
+ * /riki_follower/x_tol: 0.15
+ * /riki_follower/z_scale: 2.0
+ * /riki_follower/z_tol: 0.1
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+
+NODES
+  /camera/
+    camera_nodelet_manager (nodelet/nodelet)
+    depth_metric (nodelet/nodelet)
+    depth_metric_rect (nodelet/nodelet)
+    depth_points (nodelet/nodelet)
+    depth_rectify_depth (nodelet/nodelet)
+    depth_registered_sw_metric_rect (nodelet/nodelet)
+    driver (nodelet/nodelet)
+    points_xyzrgb_sw_registered (nodelet/nodelet)
+    register_depth_rgb (nodelet/nodelet)
+    rgb_rectify_color (nodelet/nodelet)
+  /
+    camera_base_link (tf/static_transform_publisher)
+    camera_base_link1 (tf/static_transform_publisher)
+    camera_base_link2 (tf/static_transform_publisher)
+    camera_base_link3 (tf/static_transform_publisher)
+    riki_follower (nodelet/nodelet)
+
+auto-starting new master
+[1mprocess[master]: started with pid [22224][0m
+
+[1mROS_MASTER_URI=http://192.168.123.213:11311[0m
+]2;/home/firefly/catkin_ws/src/rikirobot_project/riki_follower/launch/follower.launch http://192.168.123.213:11311
+
+[1mROS_MASTER_URI=http://192.168.123.213:11311[0m
+
+[1msetting /run_id to b0c1abd8-d105-11e5-b689-cc4b7392489e[0m
+
+]2;/home/firefly/catkin_ws/src/rikirobot_project/riki_follower/launch/follower.launch http://192.168.123.213:11311
+[31mrun_id on parameter server does not match declared run_id: b0c1abd8-d105-11e5-b689-cc4b7392489e vs b0c2d8be-d105-11e5-9039-cc4b7392489e[0m
+[31mThe traceback for the exception was written to the log file[0m
+ERROR: Unable to start XML-RPC server, port 11311 is already in use
+Unhandled exception in thread started by <bound method XmlRpcNode.run of <rosgraph.xmlrpc.XmlRpcNode object at 0x7f7e73fc10>>
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/xmlrpc.py", line 215, in run
+    self._run()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/xmlrpc.py", line 284, in _run
+    self._run_init()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/xmlrpc.py", line 234, in _run_init
+    self.server = ThreadingXMLRPCServer((bind_address, port), log_requests)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/xmlrpc.py", line 115, in __init__
+    SimpleXMLRPCServer.__init__(self, addr, SilenceableXMLRPCRequestHandler, log_requests)
+  File "/usr/lib/python2.7/SimpleXMLRPCServer.py", line 593, in __init__
+    SocketServer.TCPServer.__init__(self, addr, requestHandler, bind_and_activate)
+  File "/usr/lib/python2.7/SocketServer.py", line 417, in __init__
+    self.server_bind()
+  File "/usr/lib/python2.7/SocketServer.py", line 431, in server_bind
+    self.socket.bind(self.server_address)
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 98] Address already in use
+
+[1mprocess[rosout-1]: started with pid [22257][0m
+started core service [/rosout]
+[1mprocess[camera/camera_nodelet_manager-2]: started with pid [22272][0m
+[1mprocess[camera/driver-3]: started with pid [22275][0m
+[1mprocess[camera/rgb_rectify_color-4]: started with pid [22276][0m
+[1mprocess[camera/depth_rectify_depth-5]: started with pid [22277][0m
+[1mprocess[camera/depth_metric_rect-6]: started with pid [22278][0m
+[1mprocess[camera/depth_metric-7]: started with pid [22284][0m
+[1mprocess[camera/depth_points-8]: started with pid [22293][0m
+
+[master] killing on exit
+firefly@rikirobot:~$ exit
+logout
+
+[1mprocess[camera/register_depth_rgb-9]: started with pid [22307][0m
+[1mprocess[camera/points_xyzrgb_sw_registered-10]: started with pid [22316][0m
+[1mprocess[camera/depth_registered_sw_metric_rect-11]: started with pid [22327][0m
+[1mprocess[camera_base_link-12]: started with pid [22336][0m
+[1mprocess[camera_base_link1-13]: started with pid [22347][0m
+[1mprocess[camera_base_link2-14]: started with pid [22359][0m
+[0m[ INFO] [1455225811.046429660]: Initializing nodelet with 4 worker threads.[0m
+[1mprocess[camera_base_link3-15]: started with pid [22380][0m
+[1mprocess[riki_follower-16]: started with pid [22387][0m
+
+
+
+[0m[ INFO] [1455225811.692993417]: Device "1d27/0601@1/5" found.[0m
+
+
+Warning: USB events thread - failed to set priority. This might cause loss of data...
+
+
+
+
+
+
+
+
+
+
+[0m[ INFO] [1455225814.872363781]: Starting depth stream.[0m
+
+
+[0m[ INFO] [1455225815.317044183]: using default calibration URL[0m
+
+
+[0m[ INFO] [1455225815.318248675]: camera calibration URL: file:///home/firefly/.ros/camera_info/depth_Astra_Orbbec.yaml[0m
+[0m[ INFO] [1455225815.319467070]: Unable to open camera calibration file [/home/firefly/.ros/camera_info/depth_Astra_Orbbec.yaml][0m
+[33m[ WARN] [1455225815.320421943]: Camera calibration file /home/firefly/.ros/camera_info/depth_Astra_Orbbec.yaml not found.[0m
+[0m[ INFO] [1455225815.403162896]: Centroid at 0.206365 0.181861 0.474000 with 22361 points[0m
+
+
+
+[0m[ INFO] [1455225816.414697644]: Centroid at 0.201563 0.181535 0.478000 with 22852 points[0m
+
+
+
+[0m[ INFO] [1455225817.419251808]: Centroid at 0.205550 0.181403 0.476000 with 22635 points[0m
+
+[0m[ INFO] [1455225818.446826020]: Centroid at 0.199742 0.179297 0.473000 with 23260 points[0m
+
+[0m[ INFO] [1455225819.465459347]: Centroid at 0.192205 0.178820 0.465000 with 23841 points[0m
+
+[0m[ INFO] [1455225820.500298700]: Centroid at 0.193315 0.178394 0.462000 with 23524 points[0m
+
+[0m[ INFO] [1455225821.506525584]: Centroid at 0.185685 0.177475 0.466000 with 23999 points[0m
+
+[0m[ INFO] [1455225822.529453446]: Centroid at 0.177888 0.177937 0.467000 with 24394 points[0m
+
+[0m[ INFO] [1455225823.553612839]: Centroid at 0.201146 0.181933 0.479000 with 23211 points[0m
+
+[0m[ INFO] [1455225824.586685898]: Centroid at 0.202150 0.181483 0.481000 with 22966 points[0m
+
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.4.154 aarch64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+Last login: Thu Feb 11 21:25:34 2016 from 192.168.123.38
+roslaunch riki_follower follower.launch
+
+exit
+
+firefly@rikirobot:~$ ro
+slaunch riki_follower follower.launch
+
+... logging to /home/firefly/.ros/log/fd7cc82c-d105-11e5-90b0-cc4b7392489e/roslaunch-rikirobot-24077.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/firefly/catkin_ws/src/rikirobot_project/riki_follower/launch/follower.launch
+
+[1mstarted roslaunch server http://192.168.123.213:41144/[0m
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /camera/camera_nodelet_manager/num_worker_threads: 4
+ * /camera/depth_rectify_depth/interpolation: 0
+ * /camera/driver/auto_exposure: True
+ * /camera/driver/auto_white_balance: True
+ * /camera/driver/bootorder: 0
+ * /camera/driver/color_depth_synchronization: False
+ * /camera/driver/depth_camera_info_url: 
+ * /camera/driver/depth_frame_id: camera_depth_opti...
+ * /camera/driver/depth_registration: False
+ * /camera/driver/device_id: #1
+ * /camera/driver/devnums: 1
+ * /camera/driver/rgb_camera_info_url: 
+ * /camera/driver/rgb_frame_id: camera_rgb_optica...
+ * /riki_follower/enabled: True
+ * /riki_follower/goal_z: 0.7
+ * /riki_follower/max_x: 0.35
+ * /riki_follower/max_y: 0.5
+ * /riki_follower/max_z: 1.3
+ * /riki_follower/min_x: -0.35
+ * /riki_follower/min_y: 0.1
+ * /riki_follower/x_scale: 2.5
+ * /riki_follower/x_tol: 0.15
+ * /riki_follower/z_scale: 2.0
+ * /riki_follower/z_tol: 0.1
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+
+NODES
+  /camera/
+    camera_nodelet_manager (nodelet/nodelet)
+    depth_metric (nodelet/nodelet)
+    depth_metric_rect (nodelet/nodelet)
+    depth_points (nodelet/nodelet)
+    depth_rectify_depth (nodelet/nodelet)
+    depth_registered_sw_metric_rect (nodelet/nodelet)
+    driver (nodelet/nodelet)
+    points_xyzrgb_sw_registered (nodelet/nodelet)
+    register_depth_rgb (nodelet/nodelet)
+    rgb_rectify_color (nodelet/nodelet)
+  /
+    camera_base_link (tf/static_transform_publisher)
+    camera_base_link1 (tf/static_transform_publisher)
+    camera_base_link2 (tf/static_transform_publisher)
+    camera_base_link3 (tf/static_transform_publisher)
+    riki_follower (nodelet/nodelet)
+
+[1mROS_MASTER_URI=http://192.168.123.213:11311[0m
+]2;/home/firefly/catkin_ws/src/rikirobot_project/riki_follower/launch/follower.launch http://192.168.123.213:11311
+
+[1mprocess[camera/camera_nodelet_manager-1]: started with pid [24096][0m
+[1mprocess[camera/driver-2]: started with pid [24097][0m
+[1mprocess[camera/rgb_rectify_color-3]: started with pid [24098][0m
+[1mprocess[camera/depth_rectify_depth-4]: started with pid [24099][0m
+[1mprocess[camera/depth_metric_rect-5]: started with pid [24100][0m
+[1mprocess[camera/depth_metric-6]: started with pid [24107][0m
+[1mprocess[camera/depth_points-7]: started with pid [24125][0m
+[1mprocess[camera/register_depth_rgb-8]: started with pid [24149][0m
+
+[1mprocess[camera/points_xyzrgb_sw_registered-9]: started with pid [24162][0m
+[0m[ INFO] [1455225951.859099206]: Initializing nodelet with 4 worker threads.[0m
+[1mprocess[camera/depth_registered_sw_metric_rect-10]: started with pid [24175][0m
+[1mprocess[camera_base_link-11]: started with pid [24188][0m
+[1mprocess[camera_base_link1-12]: started with pid [24201][0m
+[1mprocess[camera_base_link2-13]: started with pid [24207][0m
+[1mprocess[camera_base_link3-14]: started with pid [24214][0m
+[1mprocess[riki_follower-15]: started with pid [24225][0m
+
+[0m[ INFO] [1455225952.633597969]: Device "1d27/0601@1/5" found.[0m
+
+Warning: USB events thread - failed to set priority. This might cause loss of data...
+
+[0m[ INFO] [1455225956.843383466]: Starting depth stream.[0m
+
+[0m[ INFO] [1455225957.306888415]: using default calibration URL[0m
+[0m[ INFO] [1455225957.307411983]: camera calibration URL: file:///home/firefly/.ros/camera_info/depth_Astra_Orbbec.yaml[0m
+[0m[ INFO] [1455225957.308127032]: Unable to open camera calibration file [/home/firefly/.ros/camera_info/depth_Astra_Orbbec.yaml][0m
+[33m[ WARN] [1455225957.308495458]: Camera calibration file /home/firefly/.ros/camera_info/depth_Astra_Orbbec.yaml not found.[0m
+
+[0m[ INFO] [1455225957.360539282]: Centroid at 0.227354 0.193599 0.474000 with 16987 points[0m
+
+[0m[ INFO] [1455225958.376565237]: Centroid at 0.217728 0.188657 0.476000 with 17573 points[0m
+
+[0m[ INFO] [1455225959.389625688]: Centroid at 0.243798 0.192424 0.475000 with 16423 points[0m
+
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.4.154 aarch64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+
+ * Support:        https://ubuntu.com/advantage
+Last login: Thu Feb 11 21:30:15 2016 from 192.168.123.38
+roslaunch riki_follower follower.launch
+exit
+
+firefly@rikirobot:~$ roslaunch riki
+_follower follower.launch
+
+... logging to /home/firefly/.ros/log/a559277a-d106-11e5-a89e-cc4b7392489e/roslaunch-rikirobot-25919.log
+
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/firefly/catkin_ws/src/rikirobot_project/riki_follower/launch/follower.launch
+
+[1mstarted roslaunch server http://192.168.123.213:45600/[0m
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /camera/camera_nodelet_manager/num_worker_threads: 4
+ * /camera/depth_rectify_depth/interpolation: 0
+ * /camera/driver/auto_exposure: True
+ * /camera/driver/auto_white_balance: True
+ * /camera/driver/bootorder: 0
+ * /camera/driver/color_depth_synchronization: False
+ * /camera/driver/depth_camera_info_url: 
+ * /camera/driver/depth_frame_id: camera_depth_opti...
+ * /camera/driver/depth_registration: False
+ * /camera/driver/device_id: #1
+ * /camera/driver/devnums: 1
+ * /camera/driver/rgb_camera_info_url: 
+ * /camera/driver/rgb_frame_id: camera_rgb_optica...
+ * /riki_follower/enabled: True
+ * /riki_follower/goal_z: 0.7
+ * /riki_follower/max_x: 0.35
+ * /riki_follower/max_y: 0.5
+ * /riki_follower/max_z: 1.3
+ * /riki_follower/min_x: -0.35
+ * /riki_follower/min_y: 0.1
+ * /riki_follower/x_scale: 2.5
+ * /riki_follower/x_tol: 0.15
+ * /riki_follower/z_scale: 2.0
+ * /riki_follower/z_tol: 0.1
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+
+NODES
+  /camera/
+    camera_nodelet_manager (nodelet/nodelet)
+    depth_metric (nodelet/nodelet)
+    depth_metric_rect (nodelet/nodelet)
+    depth_points (nodelet/nodelet)
+    depth_rectify_depth (nodelet/nodelet)
+    depth_registered_sw_metric_rect (nodelet/nodelet)
+    driver (nodelet/nodelet)
+    points_xyzrgb_sw_registered (nodelet/nodelet)
+    register_depth_rgb (nodelet/nodelet)
+    rgb_rectify_color (nodelet/nodelet)
+  /
+    camera_base_link (tf/static_transform_publisher)
+    camera_base_link1 (tf/static_transform_publisher)
+    camera_base_link2 (tf/static_transform_publisher)
+    camera_base_link3 (tf/static_transform_publisher)
+    riki_follower (nodelet/nodelet)
+
+[1mROS_MASTER_URI=http://192.168.123.213:11311[0m
+]2;/home/firefly/catkin_ws/src/rikirobot_project/riki_follower/launch/follower.launch http://192.168.123.213:11311
+
+[1mprocess[camera/camera_nodelet_manager-1]: started with pid [25936][0m
+[1mprocess[camera/driver-2]: started with pid [25937][0m
+[1mprocess[camera/rgb_rectify_color-3]: started with pid [25938][0m
+[1mprocess[camera/depth_rectify_depth-4]: started with pid [25949][0m
+[1mprocess[camera/depth_metric_rect-5]: started with pid [25963][0m
+[1mprocess[camera/depth_metric-6]: started with pid [25975][0m
+[0m[ INFO] [1455226238.180506530]: Initializing nodelet with 4 worker threads.[0m
+[1mprocess[camera/depth_points-7]: started with pid [25983][0m
+[1mprocess[camera/register_depth_rgb-8]: started with pid [25999][0m
+
+[1mprocess[camera/points_xyzrgb_sw_registered-9]: started with pid [26005][0m
+[1mprocess[camera/depth_registered_sw_metric_rect-10]: started with pid [26016][0m
+[1mprocess[camera_base_link-11]: started with pid [26027][0m
+[1mprocess[camera_base_link1-12]: started with pid [26038][0m
+[1mprocess[camera_base_link2-13]: started with pid [26058][0m
+[1mprocess[camera_base_link3-14]: started with pid [26071][0m
+[1mprocess[riki_follower-15]: started with pid [26080][0m
+
+[0m[ INFO] [1455226238.937942345]: Device "1d27/0601@1/5" found.[0m
+
+Warning: USB events thread - failed to set priority. This might cause loss of data...
+
+[0m[ INFO] [1455226243.279327874]: Starting depth stream.[0m
+
+[0m[ INFO] [1455226243.751514881]: using default calibration URL[0m
+
+[0m[ INFO] [1455226243.756844728]: camera calibration URL: file:///home/firefly/.ros/camera_info/depth_Astra_Orbbec.yaml[0m
+[0m[ INFO] [1455226243.760217116]: Unable to open camera calibration file [/home/firefly/.ros/camera_info/depth_Astra_Orbbec.yaml][0m
+[33m[ WARN] [1455226243.761609613]: Camera calibration file /home/firefly/.ros/camera_info/depth_Astra_Orbbec.yaml not found.[0m
+[0m[ INFO] [1455226243.848478583]: Centroid at 0.211817 0.183701 0.486000 with 21600 points[0m
+
+[0m[ INFO] [1455226244.886181517]: Centroid at 0.202437 0.181289 0.475000 with 22233 points[0m
+
+[0m[ INFO] [1455226245.903454666]: Centroid at 0.194257 0.180084 0.480000 with 23002 points[0m
+
+[0m[ INFO] [1455226246.916230650]: Centroid at 0.166044 0.175494 0.468000 with 25029 points[0m
+
+[0m[ INFO] [1455226247.922952982]: Centroid at 0.202404 0.180831 0.478000 with 22671 points[0m
+
+[0m[ INFO] [1455226248.937095191]: Centroid at 0.202520 0.181149 0.484000 with 22682 points[0m
+
+[0m[ INFO] [1455226249.967700450]: Centroid at 0.187844 0.179282 0.481000 with 23353 points[0m
+
+[0m[ INFO] [1455226250.998788697]: Centroid at 0.198005 0.180082 0.476000 with 22749 points[0m
+
+[0m[ INFO] [1455226252.014522918]: Centroid at 0.192760 0.179996 0.478000 with 22992 points[0m
+
+[0m[ INFO] [1455226253.049784413]: Centroid at 0.188596 0.178072 0.467000 with 23391 points[0m
+
+[0m[ INFO] [1455226254.081960784]: Centroid at 0.179045 0.177393 0.467000 with 23901 points[0m
+
+[0m[ INFO] [1455226255.087019693]: Centroid at 0.204543 0.181577 0.483000 with 22494 points[0m
+
+[0m[ INFO] [1455226256.091672848]: Centroid at 0.202216 0.181574 0.482000 with 22548 points[0m
+
+[0m[ INFO] [1455226257.186366086]: Centroid at 0.193468 0.180268 0.482000 with 23021 points[0m
+
+[0m[ INFO] [1455226258.192585703]: Centroid at 0.186475 0.178344 0.468000 with 23485 points[0m
+

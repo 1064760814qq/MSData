@@ -1,0 +1,349 @@
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.4.154 aarch64)
+
+
+
+ * Documentation:  https://help.ubuntu.com
+
+ * Management:     https://landscape.canonical.com
+
+ * Support:        https://ubuntu.com/advantage
+
+Last login: Thu Feb 11 23:25:36 2016 from 192.168.123.38
+
+
+
+roslaunch  riki_line_follower  riki_line.launch
+
+
+exit
+
+
+firefly@rikirobot:~$ r
+oslaunch  r
+i
+k
+i
+_line_follower  r
+iki_lin
+e.lau
+nch
+
+
+... logging to /home/firefly/.ros/log/84b17a86-d115-11e5-ae6f-cc4b7392489e/roslaunch-rikirobot-31491.log
+
+
+Checking log directory for disk usage. This may take awhile.
+
+Press Ctrl-C to interrupt
+
+
+Done checking log file disk usage. Usage is <1GB.
+
+
+]2;/home/firefly/catkin_ws/src/rikirobot_project/riki_line_follower/launch/riki_line.launch
+
+
+[1mstarted roslaunch server http://192.168.123.213:43077/[0m
+
+
+
+
+SUMMARY
+
+========
+
+
+
+PARAMETERS
+
+ * /rosdistro: kinetic
+
+ * /rosversion: 1.12.14
+
+
+
+NODES
+
+  /
+
+    Velocity (riki_line_follower/navig)
+
+    detection (riki_line_follower/detect)
+
+
+
+
+[1mROS_MASTER_URI=http://192.168.123.213:11311[0m
+
+]2;/home/firefly/catkin_ws/src/rikirobot_project/riki_line_follower/launch/riki_line.launch http://192.168.123.213:11311
+
+
+[1mprocess[detection-1]: started with pid [31508][0m
+
+
+[1mprocess[Velocity-2]: started with pid [31509][0m
+
+
+QFontDatabase: Cannot find font directory /usr/lib/aarch64-linux-gnu/fonts - is Qt installed correctly?
+
+QFontDatabase: Cannot find font directory /usr/lib/aarch64-linux-gnu/fonts - is Qt installed correctly?
+
+
+QFontDatabase: Cannot find font directory /usr/lib/aarch64-linux-gnu/fonts - is Qt installed correctly?
+
+
+QFontDatabase: Cannot find font directory /usr/lib/aarch64-linux-gnu/fonts - is Qt installed correctly?
+
+
+This plugin does not support propagateSizeHints()
+
+
+This plugin does not support propagateSizeHints()
+
+
+[0m[ INFO] [1455233153.917583187]: Searching[0m
+
+
+[0m[ INFO] [1455233154.117258110]: Searching[0m
+
+
+[0m[ INFO] [1455233154.317292612]: Searching[0m
+
+
+[0m[ INFO] [1455233154.517481625]: Searching[0m
+
+
+[0m[ INFO] [1455233154.717270932]: Searching[0m
+
+
+[0m[ INFO] [1455233154.917281420]: Searching[0m
+
+
+[0m[ INFO] [1455233155.117599034]: Searching[0m
+
+
+[0m[ INFO] [1455233155.317342524]: Searching[0m
+
+
+[0m[ INFO] [1455233155.517383346]: Searching[0m
+
+
+[0m[ INFO] [1455233155.717242798]: Searching[0m
+
+
+[0m[ INFO] [1455233155.917266873]: Searching[0m
+
+
+[0m[ INFO] [1455233156.117685915]: Searching[0m
+
+
+[0m[ INFO] [1455233156.317217703]: Searching[0m
+
+
+[0m[ INFO] [1455233156.517285066]: Searching[0m
+
+
+[0m[ INFO] [1455233156.717305981]: Searching[0m
+
+
+[0m[ INFO] [1455233156.917376188]: Searching[0m
+
+
+
+[0m[ INFO] [1455233157.117337384]: Searching[0m
+
+
+[0m[ INFO] [1455233157.317240757]: Searching[0m
+
+
+[0m[ INFO] [1455233157.517213328]: Searching[0m
+
+
+[0m[ INFO] [1455233157.717258889]: Searching[0m
+
+
+
+[0m[ INFO] [1455233157.917355006]: Searching[0m
+
+
+[0m[ INFO] [1455233158.117502627]: Searching[0m
+
+
+[0m[ INFO] [1455233158.317229054]: Searching[0m
+
+
+[0m[ INFO] [1455233158.517262608]: Searching[0m
+
+
+[0m[ INFO] [1455233158.717226648]: Searching[0m
+
+
+[0m[ INFO] [1455233158.917271261]: Searching[0m
+
+
+[0m[ INFO] [1455233159.117204652]: Searching[0m
+
+
+[0m[ INFO] [1455233159.317264116]: Searching[0m
+
+
+[0m[ INFO] [1455233159.517216148]: Searching[0m
+
+
+[0m[ INFO] [1455233159.717263921]: Searching[0m
+
+
+[0m[ INFO] [1455233159.917330337]: Searching[0m
+
+
+[0m[ INFO] [1455233160.117251720]: Searching[0m
+
+
+[0m[ INFO] [1455233160.317254309]: Searching[0m
+
+
+[0m[ INFO] [1455233160.521281456]: Searching[0m
+
+
+[0m[ INFO] [1455233160.717317941]: Searching[0m
+
+
+[0m[ INFO] [1455233160.918452032]: Searching[0m
+
+
+[0m[ INFO] [1455233161.118471367]: Searching[0m
+
+
+[0m[ INFO] [1455233161.317229019]: Searching[0m
+
+
+[0m[ INFO] [1455233161.517580443]: Searching[0m
+
+
+[0m[ INFO] [1455233161.717204810]: Searching[0m
+
+
+[0m[ INFO] [1455233161.917296820]: Searching[0m
+
+
+[0m[ INFO] [1455233162.117447916]: Searching[0m
+
+
+[0m[ INFO] [1455233162.320422555]: Searching[0m
+
+
+[0m[ INFO] [1455233162.517286891]: Searching[0m
+
+
+[0m[ INFO] [1455233162.718390648]: Searching[0m
+
+
+[0m[ INFO] [1455233162.917260471]: Searching[0m
+
+
+[0m[ INFO] [1455233163.117916177]: Searching[0m
+
+
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.4.154 aarch64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+Last login: Thu Feb 11 17:01:07 2016 from 192.168.123.38
+
+roslaunch  riki_line_follower  riki_line.launch
+exit
+
+firefly@rikirobot:~$ r
+oslaunch  ri
+ki_line_follo
+wer  riki_line.lau
+nch
+
+... logging to /home/firefly/.ros/log/0305e456-d0e1-11e5-83b2-cc4b7392489e/roslaunch-rikirobot-9465.log
+
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+
+Done checking log file disk usage. Usage is <1GB.
+
+]2;/home/firefly/catkin_ws/src/rikirobot_project/riki_line_follower/launch/riki_line.launch
+
+[1mstarted roslaunch server http://192.168.123.213:46447/[0m
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+
+NODES
+  /
+    Velocity (riki_line_follower/navig)
+    detection (riki_line_follower/detect)
+
+
+
+[1mROS_MASTER_URI=http://192.168.123.213:11311[0m
+]2;/home/firefly/catkin_ws/src/rikirobot_project/riki_line_follower/launch/riki_line.launch http://192.168.123.213:11311
+
+[1mprocess[detection-1]: started with pid [9482][0m
+
+[1mprocess[Velocity-2]: started with pid [9483][0m
+
+QFontDatabase: Cannot find font directory /usr/lib/aarch64-linux-gnu/fonts - is Qt installed correctly?
+QFontDatabase: Cannot find font directory /usr/lib/aarch64-linux-gnu/fonts - is Qt installed correctly?
+QFontDatabase: Cannot find font directory /usr/lib/aarch64-linux-gnu/fonts - is Qt installed correctly?
+QFontDatabase: Cannot find font directory /usr/lib/aarch64-linux-gnu/fonts - is Qt installed correctly?
+This plugin does not support propagateSizeHints()
+
+This plugin does not support propagateSizeHints()
+
+[0m[ INFO] [1455210083.938721941]: Searching[0m
+
+[0m[ INFO] [1455210084.138427379]: Searching[0m
+
+
+[0m[ INFO] [1455210084.339720765]: Searching[0m
+
+
+[0m[ INFO] [1455210084.538428809]: Searching[0m
+
+
+[0m[ INFO] [1455210084.738481773]: Searching[0m
+
+[0m[ INFO] [1455210084.938731182]: Searching[0m
+
+
+[0m[ INFO] [1455210085.138766632]: Searching[0m
+
+
+[0m[ INFO] [1455210085.338377820]: Searching[0m
+
+
+[0m[ INFO] [1455210085.538407717]: Searching[0m
+
+
+[0m[ INFO] [1455210085.738405928]: Searching[0m
+
+
+[0m[ INFO] [1455210085.938449006]: Searching[0m
+
+
+[0m[ INFO] [1455210086.138919507]: Searching[0m
+
+
+[0m[ INFO] [1455210086.338651306]: Searching[0m
+
+[0m[ INFO] [1455210086.538449866]: Searching[0m
+
+[0m[ INFO] [1455210086.738535014]: Searching[0m
+
+[0m[ INFO] [1455210086.938402456]: Searching[0m
+
+[0m[ INFO] [1455210087.138472211]: Searching[0m
+
+[0m[ INFO] [1455210087.338565710]: Searching[0m
+

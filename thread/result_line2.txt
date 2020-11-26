@@ -1,0 +1,176 @@
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.4.154 aarch64)
+
+
+
+ * Documentation:  https://help.ubuntu.com
+
+ * Management:     https://landscape.canonical.com
+
+ * Support:        https://ubuntu.com/advantage
+
+Last login: Thu Feb 11 23:25:19 2016 from 192.168.123.38
+
+
+
+roslaunch openni2_launch openni2.launch
+
+exit
+
+
+firefly@rikirobot:~$ ros
+launch openni2_launch openni2.launch
+
+
+... logging to /home/firefly/.ros/log/84b17a86-d115-11e5-ae6f-cc4b7392489e/roslaunch-rikirobot-30569.log
+
+
+Checking log directory for disk usage. This may take awhile.
+
+Press Ctrl-C to interrupt
+
+Done checking log file disk usage. Usage is <1GB.
+
+]2;/opt/ros/kinetic/share/openni2_launch/launch/openni2.launch
+
+
+[1mstarted roslaunch server http://192.168.123.213:33326/[0m
+
+
+
+SUMMARY
+
+========
+
+
+
+PARAMETERS
+
+ * /camera/camera_nodelet_manager/num_worker_threads: 4
+
+ * /camera/depth_rectify_depth/interpolation: 0
+
+ * /camera/driver/color_depth_synchronization: False
+
+ * /camera/driver/color_mode: 5
+
+ * /camera/driver/depth_camera_info_url: 
+
+ * /camera/driver/depth_frame_id: camera_depth_opti...
+
+
+ * /camera/driver/depth_mode: 5
+
+ * /camera/driver/depth_registration: False
+
+ * /camera/driver/device_id: #1
+
+ * /camera/driver/id_manufacturer: 1d27
+
+ * /camera/driver/id_product: 0601
+
+ * /camera/driver/ir_mode: 5
+
+ * /camera/driver/rgb_camera_info_url: 
+
+ * /camera/driver/rgb_frame_id: camera_rgb_optica...
+
+ * /rosdistro: kinetic
+
+ * /rosversion: 1.12.14
+
+
+
+NODES
+
+  /camera/
+
+    camera_nodelet_manager (nodelet/nodelet)
+
+    depth_metric (nodelet/nodelet)
+
+    depth_metric_rect (nodelet/nodelet)
+
+    depth_points (nodelet/nodelet)
+
+    depth_rectify_depth (nodelet/nodelet)
+
+    depth_registered_sw_metric_rect (nodelet/nodelet)
+
+    driver (nodelet/nodelet)
+
+    points_xyzrgb_sw_registered (nodelet/nodelet)
+
+    register_depth_rgb (nodelet/nodelet)
+
+    rgb_rectify_color (nodelet/nodelet)
+
+  /
+
+    camera_base_link (tf2_ros/static_transform_publisher)
+
+    camera_base_link1 (tf2_ros/static_transform_publisher)
+
+    camera_base_link2 (tf2_ros/static_transform_publisher)
+
+    camera_base_link3 (tf2_ros/static_transform_publisher)
+
+
+
+[1mROS_MASTER_URI=http://192.168.123.213:11311[0m
+
+]2;/opt/ros/kinetic/share/openni2_launch/launch/openni2.launch http://192.168.123.213:11311
+
+
+[1mprocess[camera/camera_nodelet_manager-1]: started with pid [30586][0m
+
+[1mprocess[camera/driver-2]: started with pid [30587][0m
+
+[1mprocess[camera/rgb_rectify_color-3]: started with pid [30588][0m
+
+[1mprocess[camera/depth_rectify_depth-4]: started with pid [30600][0m
+
+
+[1mprocess[camera/depth_metric_rect-5]: started with pid [30620][0m
+
+[0m[ INFO] [1455233141.419635697]: Initializing nodelet with 4 worker threads.[0m
+
+[1mprocess[camera/depth_metric-6]: started with pid [30635][0m
+
+[1mprocess[camera/depth_points-7]: started with pid [30647][0m
+
+[1mprocess[camera/register_depth_rgb-8]: started with pid [30655][0m
+
+[1mprocess[camera/points_xyzrgb_sw_registered-9]: started with pid [30663][0m
+
+[1mprocess[camera/depth_registered_sw_metric_rect-10]: started with pid [30675][0m
+
+[1mprocess[camera_base_link-11]: started with pid [30689][0m
+
+[1mprocess[camera_base_link1-12]: started with pid [30696][0m
+
+[1mprocess[camera_base_link2-13]: started with pid [30707][0m
+
+[1mprocess[camera_base_link3-14]: started with pid [30718][0m
+
+
+[0m[ INFO] [1455233142.212588821]: Device "1d27/0601@1/5" found.[0m
+
+
+Warning: USB events thread - failed to set priority. This might cause loss of data...
+
+
+[33m[ WARN] [1455233144.413554384]: Reconnect has been enabled, only one camera should be plugged into each bus[0m
+
+
+[0m[ INFO] [1455233153.584479284]: Starting color stream.[0m
+
+
+[0m[ INFO] [1455233153.746391769]: using default calibration URL[0m
+
+[0m[ INFO] [1455233153.746962102]: camera calibration URL: file:///home/firefly/.ros/camera_info/rgb_PS1080_PrimeSense.yaml[0m
+
+[0m[ INFO] [1455233153.747957419]: Unable to open camera calibration file [/home/firefly/.ros/camera_info/rgb_PS1080_PrimeSense.yaml][0m
+
+[33m[ WARN] [1455233153.748708173]: Camera calibration file /home/firefly/.ros/camera_info/rgb_PS1080_PrimeSense.yaml not found.[0m
+
+

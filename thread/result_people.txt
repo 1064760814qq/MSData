@@ -1,0 +1,953 @@
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.4.154 aarch64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+Last login: Thu Feb 11 17:32:21 2016 from 192.168.123.38
+
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.4.154 aarch64)
+
+roslaunch rikirobot bringup.launch
+exit
+
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+Last login: Thu Feb 11 21:20:50 2016 from 192.168.123.38
+roslaunch rikirobot bringup.launch
+exit
+
+firefly@rikirobot:~$ ros
+firefly@rikirobot:~$ 
+launch rikirobot bringup.launch
+
+roslaunch rikirobot bringup.launch
+
+... logging to /home/firefly/.ros/log/54ba4656-d105-11e5-8e32-cc4b7392489e/roslaunch-rikirobot-18073.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+
+... logging to /home/firefly/.ros/log/54d30d62-d105-11e5-bb5e-cc4b7392489e/roslaunch-rikirobot-18107.log
+
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/firefly/catkin_ws/src/rikirobot_project/rikirobot/launch/bringup.launch
+
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/firefly/catkin_ws/src/rikirobot_project/rikirobot/launch/bringup.launch
+
+[1mstarted roslaunch server http://192.168.123.213:42357/[0m
+
+[1mstarted roslaunch server http://192.168.123.213:34160/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /apply_calib/calib_file: /home/firefly/cat...
+ * /apply_calib/calibrate_gyros: True
+ * /arduino_serial_node/baud: 115200
+ * /arduino_serial_node/port: /dev/rikibase
+ * /ekf_localization/base_link_frame: base_footprint
+ * /ekf_localization/diagnostics_agg: True
+ * /ekf_localization/frequency: 50
+ * /ekf_localization/imu0: /imu/data
+ * /ekf_localization/imu0_config: [False, False, Fa...
+ * /ekf_localization/imu0_differential: True
+ * /ekf_localization/imu0_relative: True
+ * /ekf_localization/odom0: /raw_odom
+ * /ekf_localization/odom0_config: [False, False, Fa...
+ * /ekf_localization/odom0_differential: True
+ * /ekf_localization/odom0_relative: False
+ * /ekf_localization/odom_frame: odom
+ * /ekf_localization/two_d_mode: True
+ * /ekf_localization/world_frame: odom
+ * /imu_filter_madgwick/angular_scale: 1.27
+ * /imu_filter_madgwick/fixed_frame: base_footprint
+ * /imu_filter_madgwick/orientation_stddev: 0.05
+ * /imu_filter_madgwick/publish_tf: False
+ * /imu_filter_madgwick/use_mag: False
+ * /imu_filter_madgwick/use_magnetic_field_msg: False
+ * /imu_filter_madgwick/world_frame: enu
+ * /riki_base_node/linear_scale: 0.93
+ * /robot_description: <...>
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+ * /use_gui: False
+
+NODES
+  /
+    apply_calib (imu_calib/apply_calib)
+    arduino_serial_node (rosserial_python/serial_node.py)
+    base_footprint_to_base_link (tf/static_transform_publisher)
+    base_footprint_to_imu_link (tf/static_transform_publisher)
+    ekf_localization (robot_localization/ekf_localization_node)
+    imu_filter_madgwick (imu_filter_madgwick/imu_filter_node)
+    joint_state_publisher (joint_state_publisher/joint_state_publisher)
+    riki_base_node (rikirobot/riki_base_node)
+    robot_state_publisher (robot_state_publisher/state_publisher)
+
+auto-starting new master
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /apply_calib/calib_file: /home/firefly/cat...
+ * /apply_calib/calibrate_gyros: True
+ * /arduino_serial_node/baud: 115200
+ * /arduino_serial_node/port: /dev/rikibase
+ * /ekf_localization/base_link_frame: base_footprint
+ * /ekf_localization/diagnostics_agg: True
+ * /ekf_localization/frequency: 50
+ * /ekf_localization/imu0: /imu/data
+ * /ekf_localization/imu0_config: [False, False, Fa...
+ * /ekf_localization/imu0_differential: True
+ * /ekf_localization/imu0_relative: True
+ * /ekf_localization/odom0: /raw_odom
+ * /ekf_localization/odom0_config: [False, False, Fa...
+ * /ekf_localization/odom0_differential: True
+ * /ekf_localization/odom0_relative: False
+ * /ekf_localization/odom_frame: odom
+ * /ekf_localization/two_d_mode: True
+ * /ekf_localization/world_frame: odom
+ * /imu_filter_madgwick/angular_scale: 1.27
+ * /imu_filter_madgwick/fixed_frame: base_footprint
+ * /imu_filter_madgwick/orientation_stddev: 0.05
+ * /imu_filter_madgwick/publish_tf: False
+ * /imu_filter_madgwick/use_mag: False
+ * /imu_filter_madgwick/use_magnetic_field_msg: False
+ * /imu_filter_madgwick/world_frame: enu
+ * /riki_base_node/linear_scale: 0.93
+ * /robot_description: <...>
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+ * /use_gui: False
+
+NODES
+  /
+    apply_calib (imu_calib/apply_calib)
+    arduino_serial_node (rosserial_python/serial_node.py)
+    base_footprint_to_base_link (tf/static_transform_publisher)
+    base_footprint_to_imu_link (tf/static_transform_publisher)
+    ekf_localization (robot_localization/ekf_localization_node)
+    imu_filter_madgwick (imu_filter_madgwick/imu_filter_node)
+    joint_state_publisher (joint_state_publisher/joint_state_publisher)
+    riki_base_node (rikirobot/riki_base_node)
+    robot_state_publisher (robot_state_publisher/state_publisher)
+
+auto-starting new master
+[1mprocess[master]: started with pid [18121][0m
+
+[1mprocess[master]: started with pid [18125][0m
+
+[1mROS_MASTER_URI=http://192.168.123.213:11311[0m
+
+ERROR: Unable to start XML-RPC server, port 11311 is already in use
+Unhandled exception in thread started by <bound method XmlRpcNode.run of <rosgraph.xmlrpc.XmlRpcNode object at 0x7f933abc10>>
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/xmlrpc.py", line 215, in run
+    self._run()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/xmlrpc.py", line 284, in _run
+    self._run_init()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/xmlrpc.py", line 234, in _run_init
+    self.server = ThreadingXMLRPCServer((bind_address, port), log_requests)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/xmlrpc.py", line 115, in __init__
+    SimpleXMLRPCServer.__init__(self, addr, SilenceableXMLRPCRequestHandler, log_requests)
+  File "/usr/lib/python2.7/SimpleXMLRPCServer.py", line 593, in __init__
+    SocketServer.TCPServer.__init__(self, addr, requestHandler, bind_and_activate)
+  File "/usr/lib/python2.7/SocketServer.py", line 417, in __init__
+    self.server_bind()
+  File "/usr/lib/python2.7/SocketServer.py", line 431, in server_bind
+    self.socket.bind(self.server_address)
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 98] Address already in use
+[1mROS_MASTER_URI=http://192.168.123.213:11311[0m
+]2;/home/firefly/catkin_ws/src/rikirobot_project/rikirobot/launch/bringup.launch http://192.168.123.213:11311
+[1msetting /run_id to 54d30d62-d105-11e5-bb5e-cc4b7392489e[0m
+
+]2;/home/firefly/catkin_ws/src/rikirobot_project/rikirobot/launch/bringup.launch http://192.168.123.213:11311
+[31mrun_id on parameter server does not match declared run_id: 54d30d62-d105-11e5-bb5e-cc4b7392489e vs 54ba4656-d105-11e5-8e32-cc4b7392489e[0m
+[31mThe traceback for the exception was written to the log file[0m
+[master] killing on exit
+
+[1mprocess[rosout-1]: started with pid [18158][0m
+started core service [/rosout]
+[31mload_parameters: unable to set parameters (last param was [None]): [Errno 111] Connection refused[0m
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/roslaunch/__init__.py", line 306, in main
+    p.start()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/roslaunch/parent.py", line 279, in start
+    self.runner.launch()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/roslaunch/launch.py", line 657, in launch
+    self._setup()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/roslaunch/launch.py", line 644, in _setup
+    self._load_parameters()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/roslaunch/launch.py", line 327, in _load_parameters
+    r = param_server_multi()
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1006, in __call__
+    return MultiCallIterator(self.__server.system.multicall(marshalled_list))
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1311, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1459, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1053, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 897, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 859, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 836, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+error: [Errno 111] Connection refused
+[31m[ER
+firefly@rikirobot:~$ exit
+logout
+
+ROR] [1455225656.357391135]: [registerService] Failed to contact master at [192.168.123.213:11311].  Retrying...[0m
+[rosout-1] killing on exit
+[master] killing on exit
+
+
+firefly@rikirobot:~$ exit
+logout
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.4.154 aarch64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+Last login: Thu Feb 11 21:20:57 2016 from 192.168.123.38
+
+roslaunch rikirobot bringup.launch
+exit
+
+firefly@rikirobot:~$ roslaunc
+h rikirobot bringup.launch
+
+... logging to /home/firefly/.ros/log/8fc4b394-d105-11e5-836e-cc4b7392489e/roslaunch-rikirobot-19826.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/firefly/catkin_ws/src/rikirobot_project/rikirobot/launch/bringup.launch
+
+[1mstarted roslaunch server http://192.168.123.213:46322/[0m
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /apply_calib/calib_file: /home/firefly/cat...
+ * /apply_calib/calibrate_gyros: True
+ * /arduino_serial_node/baud: 115200
+ * /arduino_serial_node/port: /dev/rikibase
+ * /ekf_localization/base_link_frame: base_footprint
+ * /ekf_localization/diagnostics_agg: True
+ * /ekf_localization/frequency: 50
+ * /ekf_localization/imu0: /imu/data
+ * /ekf_localization/imu0_config: [False, False, Fa...
+ * /ekf_localization/imu0_differential: True
+ * /ekf_localization/imu0_relative: True
+ * /ekf_localization/odom0: /raw_odom
+ * /ekf_localization/odom0_config: [False, False, Fa...
+ * /ekf_localization/odom0_differential: True
+ * /ekf_localization/odom0_relative: False
+ * /ekf_localization/odom_frame: odom
+ * /ekf_localization/two_d_mode: True
+ * /ekf_localization/world_frame: odom
+ * /imu_filter_madgwick/angular_scale: 1.27
+ * /imu_filter_madgwick/fixed_frame: base_footprint
+ * /imu_filter_madgwick/orientation_stddev: 0.05
+ * /imu_filter_madgwick/publish_tf: False
+ * /imu_filter_madgwick/use_mag: False
+ * /imu_filter_madgwick/use_magnetic_field_msg: False
+ * /imu_filter_madgwick/world_frame: enu
+ * /riki_base_node/linear_scale: 0.93
+ * /robot_description: <...>
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+ * /use_gui: False
+
+NODES
+  /
+    apply_calib (imu_calib/apply_calib)
+    arduino_serial_node (rosserial_python/serial_node.py)
+    base_footprint_to_base_link (tf/static_transform_publisher)
+    base_footprint_to_imu_link (tf/static_transform_publisher)
+    ekf_localization (robot_localization/ekf_localization_node)
+    imu_filter_madgwick (imu_filter_madgwick/imu_filter_node)
+    joint_state_publisher (joint_state_publisher/joint_state_publisher)
+    riki_base_node (rikirobot/riki_base_node)
+    robot_state_publisher (robot_state_publisher/state_publisher)
+
+auto-starting new master
+[1mprocess[master]: started with pid [19836][0m
+
+[1mROS_MASTER_URI=http://192.168.123.213:11311[0m
+]2;/home/firefly/catkin_ws/src/rikirobot_project/rikirobot/launch/bringup.launch http://192.168.123.213:11311
+[1msetting /run_id to 8fc4b394-d105-11e5-836e-cc4b7392489e[0m
+
+[1mprocess[rosout-1]: started with pid [19849][0m
+
+started core service [/rosout]
+[1mprocess[arduino_serial_node-2]: started with pid [19866][0m
+[1mprocess[apply_calib-3]: started with pid [19867][0m
+[1mprocess[imu_filter_madgwick-4]: started with pid [19868][0m
+[1mprocess[base_footprint_to_imu_link-5]: started with pid [19869][0m
+[1mprocess[riki_base_node-6]: started with pid [19876][0m
+[1mprocess[base_footprint_to_base_link-7]: started with pid [19887][0m
+[0m[ INFO] [1455225755.500232572]: Starting ImuFilter[0m
+[1mprocess[ekf_localization-8]: started with pid [19908][0m
+[1mprocess[joint_state_publisher-9]: started with pid [19915][0m
+[1mprocess[robot_state_publisher-10]: started with pid [19930][0m
+
+[0m[ INFO] [1455225755.715629044]: Using dt computed from message headers[0m
+[0m[ INFO] [1455225755.958223010]: Imu filter gain set to 0.100000[0m
+[0m[ INFO] [1455225755.958485268]: Gyro drift bias set to 0.000000[0m
+[0m[ INFO] [1455225755.958620189]: Magnetometer bias values: 0.000000 0.000000 0.000000[0m
+
+[INFO] [1455225756.136691]: ROS Serial Python Node
+[INFO] [1455225756.183899]: Connecting to /dev/rikibase at 115200 baud
+
+[INFO] [1455225758.364548]: Note: publish buffer size is 1024 bytes
+
+[INFO] [1455225758.367004]: Setup publisher on raw_vel [riki_msgs/Velocities]
+[INFO] [1455225758.383200]: Setup publisher on raw_imu [riki_msgs/Imu]
+[INFO] [1455225758.404605]: Setup publisher on battery [riki_msgs/Battery]
+[INFO] [1455225758.421163]: Setup publisher on temperature_humidity [riki_msgs/DHT22]
+[INFO] [1455225758.440988]: Setup publisher on sonar [riki_msgs/Sonar]
+[INFO] [1455225758.470250]: Note: subscribe buffer size is 1024 bytes
+[INFO] [1455225758.474338]: Setup subscriber on pid [riki_msgs/PID]
+[INFO] [1455225758.527789]: Setup subscriber on cmd_vel [geometry_msgs/Twist]
+[INFO] [1455225758.561093]: Setup subscriber on servo [riki_msgs/Servo]
+[0m[ INFO] [1455225758.630046413]: Calibrating gyros; do not move the IMU[0m
+[INFO] [1455225758.809133]: Encoder Left Rear: -177503, Right Rear: -132628
+[INFO] [1455225758.817424]: Encoder Right Front: -132463, Left Front: -177494
+
+[INFO] [1455225759.902313]: Encoder Left Rear: -177503, Right Rear: -132628
+
+[INFO] [1455225759.908910]: Encoder Right Front: -132463, Left Front: -177494
+
+[INFO] [1455225760.995960]: Encoder Left Rear: -177503, Right Rear: -132628
+[INFO] [1455225761.002008]: Encoder Right Front: -132463, Left Front: -177494
+
+[0m[ INFO] [1455225761.453342435]: Gyro calibration complete! (bias = [0.010, 0.008, -0.018])[0m
+
+[0m[ INFO] [1455225761.484987440]: First IMU message received.[0m
+
+[INFO] [1455225762.089852]: Encoder Left Rear: -177503, Right Rear: -132628
+[INFO] [1455225762.095899]: Encoder Right Front: -132463, Left Front: -177494
+
+[INFO] [1455225763.192554]: Encoder Left Rear: -177503, Right Rear: -132628
+
+[INFO] [1455225763.198666]: Encoder Right Front: -132463, Left Front: -177494
+
+[INFO] [1455225764.285657]: Encoder Left Rear: -177503, Right Rear: -132628
+
+[INFO] [1455225764.291562]: Encoder Right Front: -132463, Left Front: -177494
+
+[INFO] [1455225765.380029]: Encoder Left Rear: -177503, Right Rear: -132628
+
+[INFO] [1455225765.386105]: Encoder Right Front: -132463, Left Front: -177494
+
+[INFO] [1455225766.474667]: Encoder Left Rear: -177503, Right Rear: -132628
+[INFO] [1455225766.481878]: Encoder Right Front: -132463, Left Front: -177494
+
+[INFO] [1455225767.568227]: Encoder Left Rear: -177503, Right Rear: -132628
+
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.4.154 aarch64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+roslaunch rikirobot bringup.launch
+
+
+ * Support:        https://ubuntu.com/advantage
+Last login: Thu Feb 11 21:22:40 2016 from 192.168.123.38
+roslaunch rikirobot bringup.launch
+exit
+
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.4.154 aarch64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+Last login: Thu Feb 11 21:23:15 2016 from 192.168.123.38
+exit
+
+firefly@rikirobot:~$ r
+firefly@rikirobot:~$ 
+oslaunch rikirobot bringup.launch
+
+roslaunch rikirobot bringup.launch
+
+... logging to /home/firefly/.ros/log/aae56484-d105-11e5-b9af-cc4b7392489e/roslaunch-rikirobot-21830.log
+
+... logging to /home/firefly/.ros/log/aaeea6ac-d105-11e5-8685-cc4b7392489e/roslaunch-rikirobot-21849.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/firefly/catkin_ws/src/rikirobot_project/rikirobot/launch/bringup.launch
+
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/firefly/catkin_ws/src/rikirobot_project/rikirobot/launch/bringup.launch
+
+[1mstarted roslaunch server http://192.168.123.213:41265/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /apply_calib/calib_file: /home/firefly/cat...
+ * /apply_calib/calibrate_gyros: True
+ * /arduino_serial_node/baud: 115200
+ * /arduino_serial_node/port: /dev/rikibase
+ * /ekf_localization/base_link_frame: base_footprint
+ * /ekf_localization/diagnostics_agg: True
+ * /ekf_localization/frequency: 50
+ * /ekf_localization/imu0: /imu/data
+ * /ekf_localization/imu0_config: [False, False, Fa...
+ * /ekf_localization/imu0_differential: True
+ * /ekf_localization/imu0_relative: True
+ * /ekf_localization/odom0: /raw_odom
+ * /ekf_localization/odom0_config: [False, False, Fa...
+ * /ekf_localization/odom0_differential: True
+ * /ekf_localization/odom0_relative: False
+ * /ekf_localization/odom_frame: odom
+ * /ekf_localization/two_d_mode: True
+ * /ekf_localization/world_frame: odom
+ * /imu_filter_madgwick/angular_scale: 1.27
+ * /imu_filter_madgwick/fixed_frame: base_footprint
+ * /imu_filter_madgwick/orientation_stddev: 0.05
+ * /imu_filter_madgwick/publish_tf: False
+ * /imu_filter_madgwick/use_mag: False
+ * /imu_filter_madgwick/use_magnetic_field_msg: False
+ * /imu_filter_madgwick/world_frame: enu
+ * /riki_base_node/linear_scale: 0.93
+ * /robot_description: <...>
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+ * /use_gui: False
+
+NODES
+  /
+    apply_calib (imu_calib/apply_calib)
+    arduino_serial_node (rosserial_python/serial_node.py)
+    base_footprint_to_base_link (tf/static_transform_publisher)
+    base_footprint_to_imu_link (tf/static_transform_publisher)
+    ekf_localization (robot_localization/ekf_localization_node)
+    imu_filter_madgwick (imu_filter_madgwick/imu_filter_node)
+    joint_state_publisher (joint_state_publisher/joint_state_publisher)
+    riki_base_node (rikirobot/riki_base_node)
+    robot_state_publisher (robot_state_publisher/state_publisher)
+
+
+[1mstarted roslaunch server http://192.168.123.213:35379/[0m
+
+auto-starting new master
+[1mprocess[master]: started with pid [21865][0m
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /apply_calib/calib_file: /home/firefly/cat...
+ * /apply_calib/calibrate_gyros: True
+ * /arduino_serial_node/baud: 115200
+ * /arduino_serial_node/port: /dev/rikibase
+ * /ekf_localization/base_link_frame: base_footprint
+ * /ekf_localization/diagnostics_agg: True
+ * /ekf_localization/frequency: 50
+ * /ekf_localization/imu0: /imu/data
+ * /ekf_localization/imu0_config: [False, False, Fa...
+ * /ekf_localization/imu0_differential: True
+ * /ekf_localization/imu0_relative: True
+ * /ekf_localization/odom0: /raw_odom
+ * /ekf_localization/odom0_config: [False, False, Fa...
+ * /ekf_localization/odom0_differential: True
+ * /ekf_localization/odom0_relative: False
+ * /ekf_localization/odom_frame: odom
+ * /ekf_localization/two_d_mode: True
+ * /ekf_localization/world_frame: odom
+ * /imu_filter_madgwick/angular_scale: 1.27
+ * /imu_filter_madgwick/fixed_frame: base_footprint
+ * /imu_filter_madgwick/orientation_stddev: 0.05
+ * /imu_filter_madgwick/publish_tf: False
+ * /imu_filter_madgwick/use_mag: False
+ * /imu_filter_madgwick/use_magnetic_field_msg: False
+ * /imu_filter_madgwick/world_frame: enu
+ * /riki_base_node/linear_scale: 0.93
+ * /robot_description: <...>
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+ * /use_gui: False
+
+NODES
+  /
+    apply_calib (imu_calib/apply_calib)
+    arduino_serial_node (rosserial_python/serial_node.py)
+    base_footprint_to_base_link (tf/static_transform_publisher)
+    base_footprint_to_imu_link (tf/static_transform_publisher)
+    ekf_localization (robot_localization/ekf_localization_node)
+    imu_filter_madgwick (imu_filter_madgwick/imu_filter_node)
+    joint_state_publisher (joint_state_publisher/joint_state_publisher)
+    riki_base_node (rikirobot/riki_base_node)
+    robot_state_publisher (robot_state_publisher/state_publisher)
+
+auto-starting new master
+[1mprocess[master]: started with pid [21869][0m
+
+[1mROS_MASTER_URI=http://192.168.123.213:11311[0m
+]2;/home/firefly/catkin_ws/src/rikirobot_project/rikirobot/launch/bringup.launch http://192.168.123.213:11311
+[31mrun_id on parameter server does not match declared run_id: aaeea6ac-d105-11e5-8685-cc4b7392489e vs aae56484-d105-11e5-b9af-cc4b7392489e[0m
+[31mThe traceback for the exception was written to the log file[0m
+
+[1mROS_MASTER_URI=http://192.168.123.213:11311[0m
+]2;/home/firefly/catkin_ws/src/rikirobot_project/rikirobot/launch/bringup.launch http://192.168.123.213:11311
+[1msetting /run_id to aaeea6ac-d105-11e5-8685-cc4b7392489e[0m
+ERROR: Unable to start XML-RPC server, port 11311 is already in use
+Unhandled exception in thread started by <bound method XmlRpcNode.run of <rosgraph.xmlrpc.XmlRpcNode object at 0x7f7e6edc10>>
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/xmlrpc.py", line 215, in run
+    self._run()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/xmlrpc.py", line 284, in _run
+    self._run_init()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/xmlrpc.py", line 234, in _run_init
+    self.server = ThreadingXMLRPCServer((bind_address, port), log_requests)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/xmlrpc.py", line 115, in __init__
+    SimpleXMLRPCServer.__init__(self, addr, SilenceableXMLRPCRequestHandler, log_requests)
+  File "/usr/lib/python2.7/SimpleXMLRPCServer.py", line 593, in __init__
+    SocketServer.TCPServer.__init__(self, addr, requestHandler, bind_and_activate)
+  File "/usr/lib/python2.7/SocketServer.py", line 417, in __init__
+    self.server_bind()
+  File "/usr/lib/python2.7/SocketServer.py", line 431, in server_bind
+    self.socket.bind(self.server_address)
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 98] Address already in use
+
+[master] killing on exit
+
+[1mprocess[rosout-1]: started with pid [21902][0m
+started core service [/rosout]
+[31mload_parameters: unable to set parameters (last param was [None]): [Errno 111] Connection refused[0m
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/roslaunch/__init__.py", line 306, in main
+    p.start()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/roslaunch/parent.py", line 279, in start
+    self.runner.launch()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/roslaunch/launch.py", line 657, in launch
+    self._setup()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/roslaunch/launch.py", line 644, in _setup
+    self._load_parameters()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/roslaunch/launch.py", line 327, in _load_parameters
+    r = param_server_multi()
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1006, in __call__
+    return MultiCallIterator(self.__server.system.multicall(marshalled_list))
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1311, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1459, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1053, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 897, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 859, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 836, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+error: [Errno 111] Connection refused
+[31m[ER
+firefly@rikirobot:~$ exit
+logout
+
+ROR] [1455225800.776294721]: [registerService] Failed to contact master at [192.168.123.213:11311].  Retrying...[0m
+[rosout-1] killing on exit
+[master] killing on exit
+
+
+firefly@rikirobot:~$ exit
+logout
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.4.154 aarch64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+Last login: Thu Feb 11 21:23:25 2016 from 192.168.123.38
+
+roslaunch rikirobot bringup.launch
+exit
+
+firefly@rikirobot:~$ ros
+launch rikirobot bringup.launch
+
+... logging to /home/firefly/.ros/log/fd7cc82c-d105-11e5-90b0-cc4b7392489e/roslaunch-rikirobot-23570.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/firefly/catkin_ws/src/rikirobot_project/rikirobot/launch/bringup.launch
+
+[1mstarted roslaunch server http://192.168.123.213:33479/[0m
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /apply_calib/calib_file: /home/firefly/cat...
+ * /apply_calib/calibrate_gyros: True
+ * /arduino_serial_node/baud: 115200
+ * /arduino_serial_node/port: /dev/rikibase
+ * /ekf_localization/base_link_frame: base_footprint
+ * /ekf_localization/diagnostics_agg: True
+ * /ekf_localization/frequency: 50
+ * /ekf_localization/imu0: /imu/data
+ * /ekf_localization/imu0_config: [False, False, Fa...
+ * /ekf_localization/imu0_differential: True
+ * /ekf_localization/imu0_relative: True
+ * /ekf_localization/odom0: /raw_odom
+ * /ekf_localization/odom0_config: [False, False, Fa...
+ * /ekf_localization/odom0_differential: True
+ * /ekf_localization/odom0_relative: False
+ * /ekf_localization/odom_frame: odom
+ * /ekf_localization/two_d_mode: True
+ * /ekf_localization/world_frame: odom
+ * /imu_filter_madgwick/angular_scale: 1.27
+ * /imu_filter_madgwick/fixed_frame: base_footprint
+ * /imu_filter_madgwick/orientation_stddev: 0.05
+ * /imu_filter_madgwick/publish_tf: False
+ * /imu_filter_madgwick/use_mag: False
+ * /imu_filter_madgwick/use_magnetic_field_msg: False
+ * /imu_filter_madgwick/world_frame: enu
+ * /riki_base_node/linear_scale: 0.93
+ * /robot_description: <...>
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+ * /use_gui: False
+
+NODES
+  /
+    apply_calib (imu_calib/apply_calib)
+    arduino_serial_node (rosserial_python/serial_node.py)
+    base_footprint_to_base_link (tf/static_transform_publisher)
+    base_footprint_to_imu_link (tf/static_transform_publisher)
+    ekf_localization (robot_localization/ekf_localization_node)
+    imu_filter_madgwick (imu_filter_madgwick/imu_filter_node)
+    joint_state_publisher (joint_state_publisher/joint_state_publisher)
+    riki_base_node (rikirobot/riki_base_node)
+    robot_state_publisher (robot_state_publisher/state_publisher)
+
+auto-starting new master
+[1mprocess[master]: started with pid [23580][0m
+
+[1mROS_MASTER_URI=http://192.168.123.213:11311[0m
+]2;/home/firefly/catkin_ws/src/rikirobot_project/rikirobot/launch/bringup.launch http://192.168.123.213:11311
+[1msetting /run_id to fd7cc82c-d105-11e5-90b0-cc4b7392489e[0m
+
+[1mprocess[rosout-1]: started with pid [23593][0m
+started core service [/rosout]
+[1mprocess[arduino_serial_node-2]: started with pid [23610][0m
+[1mprocess[apply_calib-3]: started with pid [23611][0m
+
+[1mprocess[imu_filter_madgwick-4]: started with pid [23612][0m
+[1mprocess[base_footprint_to_imu_link-5]: started with pid [23622][0m
+[1mprocess[riki_base_node-6]: started with pid [23640][0m
+[0m[ INFO] [1455225939.362112051]: Starting ImuFilter[0m
+[1mprocess[base_footprint_to_base_link-7]: started with pid [23656][0m
+[1mprocess[ekf_localization-8]: started with pid [23670][0m
+[1mprocess[joint_state_publisher-9]: started with pid [23678][0m
+[0m[ INFO] [1455225939.481578327]: Using dt computed from message headers[0m
+[1mprocess[robot_state_publisher-10]: started with pid [23688][0m
+
+[0m[ INFO] [1455225939.686112612]: Imu filter gain set to 0.100000[0m
+[0m[ INFO] [1455225939.686353384]: Gyro drift bias set to 0.000000[0m
+[0m[ INFO] [1455225939.686476298]: Magnetometer bias values: 0.000000 0.000000 0.000000[0m
+[INFO] [1455225940.026362]: ROS Serial Python Node
+[INFO] [1455225940.075474]: Connecting to /dev/rikibase at 115200 baud
+
+[INFO] [1455225942.291919]: Note: publish buffer size is 1024 bytes
+
+[INFO] [1455225942.295162]: Setup publisher on raw_vel [riki_msgs/Velocities]
+[INFO] [1455225942.313925]: Setup publisher on raw_imu [riki_msgs/Imu]
+[INFO] [1455225942.331709]: Setup publisher on battery [riki_msgs/Battery]
+[INFO] [1455225942.353146]: Setup publisher on temperature_humidity [riki_msgs/DHT22]
+[INFO] [1455225942.372994]: Setup publisher on sonar [riki_msgs/Sonar]
+[INFO] [1455225942.420105]: Note: subscribe buffer size is 1024 bytes
+[INFO] [1455225942.424326]: Setup subscriber on pid [riki_msgs/PID]
+[INFO] [1455225942.456455]: Setup subscriber on cmd_vel [geometry_msgs/Twist]
+[INFO] [1455225942.499987]: Setup subscriber on servo [riki_msgs/Servo]
+[0m[ INFO] [1455225942.637670628]: Calibrating gyros; do not move the IMU[0m
+
+[INFO] [1455225942.951034]: Encoder Left Rear: -183207, Right Rear: -142472
+[INFO] [1455225942.960405]: Encoder Right Front: -142291, Left Front: -183222
+
+[INFO] [1455225944.044446]: Encoder Left Rear: -183207, Right Rear: -142472
+
+[INFO] [1455225944.069784]: Encoder Right Front: -142291, Left Front: -183222
+
+[INFO] [1455225945.138288]: Encoder Left Rear: -183207, Right Rear: -142472
+
+[INFO] [1455225945.145250]: Encoder Right Front: -142291, Left Front: -183222
+[0m[ INFO] [1455225945.566584922]: Gyro calibration complete! (bias = [0.010, 0.007, -0.018])[0m
+
+[0m[ INFO] [1455225945.598260034]: First IMU message received.[0m
+
+[INFO] [1455225946.232127]: Encoder Left Rear: -183207, Right Rear: -142472
+[INFO] [1455225946.238170]: Encoder Right Front: -142291, Left Front: -183222
+
+[INFO] [1455225947.326022]: Encoder Left Rear: -183207, Right Rear: -142472
+
+[INFO] [1455225947.332051]: Encoder Right Front: -142291, Left Front: -183222
+
+[INFO] [1455225948.419699]: Encoder Left Rear: -183207, Right Rear: -142472
+
+[INFO] [1455225948.427021]: Encoder Right Front: -142291, Left Front: -183222
+
+[INFO] [1455225949.515310]: Encoder Left Rear: -183207, Right Rear: -142472
+
+[INFO] [1455225949.525375]: Encoder Right Front: -142291, Left Front: -183222
+
+[INFO] [1455225950.608489]: Encoder Left Rear: -183207, Right Rear: -142472
+
+[INFO] [1455225950.615726]: Encoder Right Front: -142291, Left Front: -183222
+
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.4.154 aarch64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+Last login: Thu Feb 11 21:25:47 2016 from 192.168.123.38
+
+roslaunch rikirobot bringup.launch
+exit
+
+firefly@rikirobot:~$ rosl
+aunch rikirobot bringup.launch
+
+... logging to /home/firefly/.ros/log/a559277a-d106-11e5-a89e-cc4b7392489e/roslaunch-rikirobot-25413.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/firefly/catkin_ws/src/rikirobot_project/rikirobot/launch/bringup.launch
+
+[1mstarted roslaunch server http://192.168.123.213:33827/[0m
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /apply_calib/calib_file: /home/firefly/cat...
+ * /apply_calib/calibrate_gyros: True
+ * /arduino_serial_node/baud: 115200
+ * /arduino_serial_node/port: /dev/rikibase
+ * /ekf_localization/base_link_frame: base_footprint
+ * /ekf_localization/diagnostics_agg: True
+ * /ekf_localization/frequency: 50
+ * /ekf_localization/imu0: /imu/data
+ * /ekf_localization/imu0_config: [False, False, Fa...
+ * /ekf_localization/imu0_differential: True
+ * /ekf_localization/imu0_relative: True
+ * /ekf_localization/odom0: /raw_odom
+ * /ekf_localization/odom0_config: [False, False, Fa...
+ * /ekf_localization/odom0_differential: True
+ * /ekf_localization/odom0_relative: False
+ * /ekf_localization/odom_frame: odom
+ * /ekf_localization/two_d_mode: True
+ * /ekf_localization/world_frame: odom
+ * /imu_filter_madgwick/angular_scale: 1.27
+ * /imu_filter_madgwick/fixed_frame: base_footprint
+ * /imu_filter_madgwick/orientation_stddev: 0.05
+ * /imu_filter_madgwick/publish_tf: False
+ * /imu_filter_madgwick/use_mag: False
+ * /imu_filter_madgwick/use_magnetic_field_msg: False
+ * /imu_filter_madgwick/world_frame: enu
+ * /riki_base_node/linear_scale: 0.93
+ * /robot_description: <...>
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+ * /use_gui: False
+
+NODES
+  /
+    apply_calib (imu_calib/apply_calib)
+    arduino_serial_node (rosserial_python/serial_node.py)
+    base_footprint_to_base_link (tf/static_transform_publisher)
+    base_footprint_to_imu_link (tf/static_transform_publisher)
+    ekf_localization (robot_localization/ekf_localization_node)
+    imu_filter_madgwick (imu_filter_madgwick/imu_filter_node)
+    joint_state_publisher (joint_state_publisher/joint_state_publisher)
+    riki_base_node (rikirobot/riki_base_node)
+    robot_state_publisher (robot_state_publisher/state_publisher)
+
+auto-starting new master
+[1mprocess[master]: started with pid [25423][0m
+
+[1mROS_MASTER_URI=http://192.168.123.213:11311[0m
+]2;/home/firefly/catkin_ws/src/rikirobot_project/rikirobot/launch/bringup.launch http://192.168.123.213:11311
+[1msetting /run_id to a559277a-d106-11e5-a89e-cc4b7392489e[0m
+
+[1mprocess[rosout-1]: started with pid [25436][0m
+started core service [/rosout]
+[1mprocess[arduino_serial_node-2]: started with pid [25440][0m
+
+[1mprocess[apply_calib-3]: started with pid [25449][0m
+[1mprocess[imu_filter_madgwick-4]: started with pid [25455][0m
+[1mprocess[base_footprint_to_imu_link-5]: started with pid [25456][0m
+[1mprocess[riki_base_node-6]: started with pid [25465][0m
+[1mprocess[base_footprint_to_base_link-7]: started with pid [25476][0m
+[0m[ INFO] [1455226221.055324579]: Starting ImuFilter[0m
+[1mprocess[ekf_localization-8]: started with pid [25487][0m
+[1mprocess[joint_state_publisher-9]: started with pid [25509][0m
+[1mprocess[robot_state_publisher-10]: started with pid [25522][0m
+[0m[ INFO] [1455226221.256107217]: Using dt computed from message headers[0m
+
+[0m[ INFO] [1455226221.502893523]: Imu filter gain set to 0.100000[0m
+[0m[ INFO] [1455226221.503164945]: Gyro drift bias set to 0.000000[0m
+[0m[ INFO] [1455226221.503346314]: Magnetometer bias values: 0.000000 0.000000 0.000000[0m
+[INFO] [1455226221.686274]: ROS Serial Python Node
+[INFO] [1455226221.718082]: Connecting to /dev/rikibase at 115200 baud
+
+[INFO] [1455226223.920072]: Note: publish buffer size is 1024 bytes
+[INFO] [1455226223.923427]: Setup publisher on raw_vel [riki_msgs/Velocities]
+
+[INFO] [1455226223.941026]: Setup publisher on raw_imu [riki_msgs/Imu]
+[INFO] [1455226223.961362]: Setup publisher on battery [riki_msgs/Battery]
+[INFO] [1455226223.989735]: Setup publisher on temperature_humidity [riki_msgs/DHT22]
+[INFO] [1455226224.007813]: Setup publisher on sonar [riki_msgs/Sonar]
+[INFO] [1455226224.039743]: Note: subscribe buffer size is 1024 bytes
+[INFO] [1455226224.049172]: Setup subscriber on pid [riki_msgs/PID]
+[INFO] [1455226224.078971]: Setup subscriber on cmd_vel [geometry_msgs/Twist]
+[INFO] [1455226224.108052]: Setup subscriber on servo [riki_msgs/Servo]
+[0m[ INFO] [1455226224.208255563]: Calibrating gyros; do not move the IMU[0m
+
+[INFO] [1455226224.504335]: Encoder Left Rear: -188909, Right Rear: -153600
+[INFO] [1455226224.515340]: Encoder Right Front: -153408, Left Front: -188908
+
+[INFO] [1455226225.597752]: Encoder Left Rear: -188909, Right Rear: -153600
+
+[INFO] [1455226225.634216]: Encoder Right Front: -153408, Left Front: -188908
+
+[INFO] [1455226226.696488]: Encoder Left Rear: -188909, Right Rear: -153600
+
+[INFO] [1455226226.703867]: Encoder Right Front: -153408, Left Front: -188908
+[0m[ INFO] [1455226227.130927703]: Gyro calibration complete! (bias = [0.010, 0.007, -0.018])[0m
+
+[0m[ INFO] [1455226227.164001090]: First IMU message received.[0m
+
+[INFO] [1455226227.789584]: Encoder Left Rear: -188909, Right Rear: -153600
+[INFO] [1455226227.795589]: Encoder Right Front: -153408, Left Front: -188908
+
+[INFO] [1455226228.884180]: Encoder Left Rear: -188909, Right Rear: -153600
+
+[INFO] [1455226228.889704]: Encoder Right Front: -153408, Left Front: -188908
+
+[INFO] [1455226229.977810]: Encoder Left Rear: -188909, Right Rear: -153600
+
+[INFO] [1455226229.983818]: Encoder Right Front: -153408, Left Front: -188908
+
+[INFO] [1455226231.072463]: Encoder Left Rear: -188909, Right Rear: -153600
+
+[INFO] [1455226231.079818]: Encoder Right Front: -153408, Left Front: -188908
+
+[INFO] [1455226232.174981]: Encoder Left Rear: -188909, Right Rear: -153600
+
+[INFO] [1455226232.182055]: Encoder Right Front: -153408, Left Front: -188908
+

@@ -1,0 +1,503 @@
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.4.154 aarch64)
+
+
+
+ * Documentation:  https://help.ubuntu.com
+
+ * Management:     https://landscape.canonical.com
+
+ * Support:        https://ubuntu.com/advantage
+
+
+Last login: Thu Feb 11 23:16:43 2016 from 192.168.123.30
+
+
+roslaunch rikirobot bringup.launch
+
+exit
+
+
+firefly@rikirobot:~$ ro
+slaunch rikirobot bringup.launch
+
+
+... logging to /home/firefly/.ros/log/84b17a86-d115-11e5-ae6f-cc4b7392489e/roslaunch-rikirobot-30018.log
+
+
+Checking log directory for disk usage. This may take awhile.
+
+Press Ctrl-C to interrupt
+
+Done checking log file disk usage. Usage is <1GB.
+
+]2;/home/firefly/catkin_ws/src/rikirobot_project/rikirobot/launch/bringup.launch
+
+
+[1mstarted roslaunch server http://192.168.123.213:40818/[0m
+
+
+
+
+SUMMARY
+
+========
+
+
+
+PARAMETERS
+
+ * /apply_calib/calib_file: /home/firefly/cat...
+
+ * /apply_calib/calibrate_gyros: True
+
+ * /arduino_serial_node/baud: 115200
+
+ * /arduino_serial_node/port: /dev/rikibase
+
+ * /ekf_localization/base_link_frame: base_footprint
+
+ * /ekf_localization/diagnostics_agg: True
+
+ * /ekf_localization/frequency: 50
+
+ * /ekf_localization/imu0: /imu/data
+
+ * /ekf_localization/imu0_config: [False, False, Fa...
+
+ * /ekf_localization/imu0_differential: True
+
+ * /ekf_localization/imu0_relative: True
+
+ * /ekf_localization/odom0: /raw_odom
+
+ * /ekf_localization/odom0_config: [False, False, Fa...
+
+ * /ekf_localization/odom0_differential: True
+
+ * /ekf_localization/odom0_relative: False
+
+ * /ekf_localization/odom_frame: odom
+
+ * /ekf_localization/two_d_mode: True
+
+ * /ekf_localization/world_frame: odom
+
+ * /imu_filter_madgwick/angular_scale: 1.27
+
+ * /imu_filter_madgwick/fixed_frame: base_footprint
+
+ * /imu_filter_madgwick/orientation_stddev: 0.05
+
+ * /imu_filter_madgwick/publish_tf: False
+
+ * /imu_filter_madgwick/use_mag: False
+
+ * /imu_filter_madgwick/use_magnetic_field_msg: False
+
+ * /imu_filter_madgwick/world_frame: enu
+
+ * /riki_base_node/linear_scale: 0.93
+
+ * /robot_description: <...>
+
+ * /rosdistro: kinetic
+
+ * /rosversion: 1.12.14
+
+ * /use_gui: False
+
+
+
+NODES
+
+  /
+
+    apply_calib (imu_calib/apply_calib)
+
+    arduino_serial_node (rosserial_python/serial_node.py)
+
+    base_footprint_to_base_link (tf/static_transform_publisher)
+
+    base_footprint_to_imu_link (tf/static_transform_publisher)
+
+    ekf_localization (robot_localization/ekf_localization_node)
+
+    imu_filter_madgwick (imu_filter_madgwick/imu_filter_node)
+
+    joint_state_publisher (joint_state_publisher/joint_state_publisher)
+
+    riki_base_node (rikirobot/riki_base_node)
+
+    robot_state_publisher (robot_state_publisher/state_publisher)
+
+
+
+[1mROS_MASTER_URI=http://192.168.123.213:11311[0m
+
+]2;/home/firefly/catkin_ws/src/rikirobot_project/rikirobot/launch/bringup.launch http://192.168.123.213:11311
+
+
+[1mprocess[arduino_serial_node-1]: started with pid [30035][0m
+
+[1mprocess[apply_calib-2]: started with pid [30036][0m
+
+[1mprocess[imu_filter_madgwick-3]: started with pid [30037][0m
+
+[1mprocess[base_footprint_to_imu_link-4]: started with pid [30038][0m
+
+[1mprocess[riki_base_node-5]: started with pid [30053][0m
+
+[1mprocess[base_footprint_to_base_link-6]: started with pid [30064][0m
+
+[0m[ INFO] [1455233123.723372617]: Starting ImuFilter[0m
+
+[1mprocess[ekf_localization-7]: started with pid [30080][0m
+
+[1mprocess[joint_state_publisher-8]: started with pid [30090][0m
+
+[1mprocess[robot_state_publisher-9]: started with pid [30096][0m
+
+
+[0m[ INFO] [1455233124.202948853]: Calibrating gyros; do not move the IMU[0m
+
+[0m[ INFO] [1455233124.206376537]: Using dt computed from message headers[0m
+
+
+[0m[ INFO] [1455233124.488862199]: Imu filter gain set to 0.100000[0m
+
+[0m[ INFO] [1455233124.489065054]: Gyro drift bias set to 0.000000[0m
+
+[0m[ INFO] [1455233124.489324152]: Magnetometer bias values: 0.000000 0.000000 0.000000[0m
+
+[INFO] [1455233124.724306]: ROS Serial Python Node
+
+
+[INFO] [1455233124.798398]: Connecting to /dev/rikibase at 115200 baud
+
+
+[INFO] [1455233127.007651]: Note: publish buffer size is 1024 bytes
+
+
+[INFO] [1455233127.011275]: Setup publisher on raw_vel [riki_msgs/Velocities]
+
+[INFO] [1455233127.029758]: Setup publisher on raw_imu [riki_msgs/Imu]
+
+[INFO] [1455233127.047104]: Setup publisher on battery [riki_msgs/Battery]
+
+[INFO] [1455233127.083598]: Setup publisher on temperature_humidity [riki_msgs/DHT22]
+
+[INFO] [1455233127.107070]: Setup publisher on sonar [riki_msgs/Sonar]
+
+[INFO] [1455233127.140416]: Note: subscribe buffer size is 1024 bytes
+
+[INFO] [1455233127.143080]: Setup subscriber on pid [riki_msgs/PID]
+
+[INFO] [1455233127.187481]: Setup subscriber on cmd_vel [geometry_msgs/Twist]
+
+[INFO] [1455233127.226977]: Setup subscriber on servo [riki_msgs/Servo]
+
+[INFO] [1455233127.257073]: Encoder Left Rear: -40648, Right Rear: -38082
+
+[INFO] [1455233127.267362]: Encoder Right Front: -37978, Left Front: -40626
+
+
+[INFO] [1455233128.175372]: Encoder Left Rear: -40648, Right Rear: -38082
+
+
+[INFO] [1455233128.185867]: Encoder Right Front: -37978, Left Front: -40626
+
+
+[INFO] [1455233129.268067]: Encoder Left Rear: -40648, Right Rear: -38082
+
+
+[INFO] [1455233129.280534]: Encoder Right Front: -37978, Left Front: -40626
+
+[0m[ INFO] [1455233129.487799565]: Gyro calibration complete! (bias = [0.011, 0.008, -0.017])[0m
+
+[0m[ INFO] [1455233129.521701932]: First IMU message received.[0m
+
+
+[INFO] [1455233130.362754]: Encoder Left Rear: -40648, Right Rear: -38082
+
+
+[INFO] [1455233130.375326]: Encoder Right Front: -37978, Left Front: -40626
+
+
+[INFO] [1455233131.453267]: Encoder Left Rear: -40648, Right Rear: -38082
+
+
+[INFO] [1455233131.460261]: Encoder Right Front: -37978, Left Front: -40626
+
+
+[INFO] [1455233132.547004]: Encoder Left Rear: -40648, Right Rear: -38082
+
+
+[INFO] [1455233132.552972]: Encoder Right Front: -37978, Left Front: -40626
+
+
+[INFO] [1455233133.642973]: Encoder Left Rear: -40648, Right Rear: -38082
+
+
+[INFO] [1455233133.651713]: Encoder Right Front: -37978, Left Front: -40626
+
+
+[INFO] [1455233134.735413]: Encoder Left Rear: -40648, Right Rear: -38082
+
+
+[INFO] [1455233134.743114]: Encoder Right Front: -37978, Left Front: -40626
+
+
+[INFO] [1455233135.829773]: Encoder Left Rear: -40648, Right Rear: -38082
+
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.4.154 aarch64)
+
+
+
+ * Documentation:  https://help.ubuntu.com
+
+ * Management:     https://landscape.canonical.com
+
+ * Support:        https://ubuntu.com/advantage
+
+
+Last login: Thu Feb 11 23:16:43 2016 from 192.168.123.30
+
+roslaunch rikirobot bringup.launch
+
+exit
+
+
+firefly@rikirobot:~$ ro
+slaunch rikirobot bringup.launch
+
+
+... logging to /home/firefly/.ros/log/84b17a86-d115-11e5-ae6f-cc4b7392489e/roslaunch-rikirobot-30018.log
+
+
+Checking log directory for disk usage. This may take awhile.
+
+Press Ctrl-C to interrupt
+
+Done checking log file disk usage. Usage is <1GB.
+
+]2;/home/firefly/catkin_ws/src/rikirobot_project/rikirobot/launch/bringup.launch
+
+
+[1mstarted roslaunch server http://192.168.123.213:40818/[0m
+
+
+
+
+SUMMARY
+
+========
+
+
+
+PARAMETERS
+
+ * /apply_calib/calib_file: /home/firefly/cat...
+
+ * /apply_calib/calibrate_gyros: True
+
+ * /arduino_serial_node/baud: 115200
+
+ * /arduino_serial_node/port: /dev/rikibase
+
+ * /ekf_localization/base_link_frame: base_footprint
+
+ * /ekf_localization/diagnostics_agg: True
+
+ * /ekf_localization/frequency: 50
+
+ * /ekf_localization/imu0: /imu/data
+
+ * /ekf_localization/imu0_config: [False, False, Fa...
+
+ * /ekf_localization/imu0_differential: True
+
+ * /ekf_localization/imu0_relative: True
+
+ * /ekf_localization/odom0: /raw_odom
+
+ * /ekf_localization/odom0_config: [False, False, Fa...
+
+ * /ekf_localization/odom0_differential: True
+
+ * /ekf_localization/odom0_relative: False
+
+ * /ekf_localization/odom_frame: odom
+
+ * /ekf_localization/two_d_mode: True
+
+ * /ekf_localization/world_frame: odom
+
+ * /imu_filter_madgwick/angular_scale: 1.27
+
+ * /imu_filter_madgwick/fixed_frame: base_footprint
+
+ * /imu_filter_madgwick/orientation_stddev: 0.05
+
+ * /imu_filter_madgwick/publish_tf: False
+
+ * /imu_filter_madgwick/use_mag: False
+
+ * /imu_filter_madgwick/use_magnetic_field_msg: False
+
+ * /imu_filter_madgwick/world_frame: enu
+
+ * /riki_base_node/linear_scale: 0.93
+
+ * /robot_description: <...>
+
+ * /rosdistro: kinetic
+
+ * /rosversion: 1.12.14
+
+ * /use_gui: False
+
+
+
+NODES
+
+  /
+
+    apply_calib (imu_calib/apply_calib)
+
+    arduino_serial_node (rosserial_python/serial_node.py)
+
+    base_footprint_to_base_link (tf/static_transform_publisher)
+
+    base_footprint_to_imu_link (tf/static_transform_publisher)
+
+    ekf_localization (robot_localization/ekf_localization_node)
+
+    imu_filter_madgwick (imu_filter_madgwick/imu_filter_node)
+
+    joint_state_publisher (joint_state_publisher/joint_state_publisher)
+
+    riki_base_node (rikirobot/riki_base_node)
+
+    robot_state_publisher (robot_state_publisher/state_publisher)
+
+
+
+[1mROS_MASTER_URI=http://192.168.123.213:11311[0m
+
+]2;/home/firefly/catkin_ws/src/rikirobot_project/rikirobot/launch/bringup.launch http://192.168.123.213:11311
+
+
+[1mprocess[arduino_serial_node-1]: started with pid [30035][0m
+
+[1mprocess[apply_calib-2]: started with pid [30036][0m
+
+[1mprocess[imu_filter_madgwick-3]: started with pid [30037][0m
+
+[1mprocess[base_footprint_to_imu_link-4]: started with pid [30038][0m
+
+[1mprocess[riki_base_node-5]: started with pid [30053][0m
+
+[1mprocess[base_footprint_to_base_link-6]: started with pid [30064][0m
+
+[0m[ INFO] [1455233123.723372617]: Starting ImuFilter[0m
+
+[1mprocess[ekf_localization-7]: started with pid [30080][0m
+
+[1mprocess[joint_state_publisher-8]: started with pid [30090][0m
+
+[1mprocess[robot_state_publisher-9]: started with pid [30096][0m
+
+
+[0m[ INFO] [1455233124.202948853]: Calibrating gyros; do not move the IMU[0m
+
+[0m[ INFO] [1455233124.206376537]: Using dt computed from message headers[0m
+
+
+[0m[ INFO] [1455233124.488862199]: Imu filter gain set to 0.100000[0m
+
+[0m[ INFO] [1455233124.489065054]: Gyro drift bias set to 0.000000[0m
+
+[0m[ INFO] [1455233124.489324152]: Magnetometer bias values: 0.000000 0.000000 0.000000[0m
+
+[INFO] [1455233124.724306]: ROS Serial Python Node
+
+
+[INFO] [1455233124.798398]: Connecting to /dev/rikibase at 115200 baud
+
+
+[INFO] [1455233127.007651]: Note: publish buffer size is 1024 bytes
+
+
+[INFO] [1455233127.011275]: Setup publisher on raw_vel [riki_msgs/Velocities]
+
+[INFO] [1455233127.029758]: Setup publisher on raw_imu [riki_msgs/Imu]
+
+[INFO] [1455233127.047104]: Setup publisher on battery [riki_msgs/Battery]
+
+[INFO] [1455233127.083598]: Setup publisher on temperature_humidity [riki_msgs/DHT22]
+
+[INFO] [1455233127.107070]: Setup publisher on sonar [riki_msgs/Sonar]
+
+[INFO] [1455233127.140416]: Note: subscribe buffer size is 1024 bytes
+
+[INFO] [1455233127.143080]: Setup subscriber on pid [riki_msgs/PID]
+
+[INFO] [1455233127.187481]: Setup subscriber on cmd_vel [geometry_msgs/Twist]
+
+[INFO] [1455233127.226977]: Setup subscriber on servo [riki_msgs/Servo]
+
+[INFO] [1455233127.257073]: Encoder Left Rear: -40648, Right Rear: -38082
+
+[INFO] [1455233127.267362]: Encoder Right Front: -37978, Left Front: -40626
+
+
+[INFO] [1455233128.175372]: Encoder Left Rear: -40648, Right Rear: -38082
+
+
+[INFO] [1455233128.185867]: Encoder Right Front: -37978, Left Front: -40626
+
+
+[INFO] [1455233129.268067]: Encoder Left Rear: -40648, Right Rear: -38082
+
+
+[INFO] [1455233129.280534]: Encoder Right Front: -37978, Left Front: -40626
+
+[0m[ INFO] [1455233129.487799565]: Gyro calibration complete! (bias = [0.011, 0.008, -0.017])[0m
+
+[0m[ INFO] [1455233129.521701932]: First IMU message received.[0m
+
+
+[INFO] [1455233130.362754]: Encoder Left Rear: -40648, Right Rear: -38082
+
+
+[INFO] [1455233130.375326]: Encoder Right Front: -37978, Left Front: -40626
+
+
+[INFO] [1455233131.453267]: Encoder Left Rear: -40648, Right Rear: -38082
+
+
+[INFO] [1455233131.460261]: Encoder Right Front: -37978, Left Front: -40626
+
+
+[INFO] [1455233132.547004]: Encoder Left Rear: -40648, Right Rear: -38082
+
+
+[INFO] [1455233132.552972]: Encoder Right Front: -37978, Left Front: -40626
+
+
+[INFO] [1455233133.642973]: Encoder Left Rear: -40648, Right Rear: -38082
+
+
+[INFO] [1455233133.651713]: Encoder Right Front: -37978, Left Front: -40626
+
+
+[INFO] [1455233134.735413]: Encoder Left Rear: -40648, Right Rear: -38082
+
+
+[INFO] [1455233134.743114]: Encoder Right Front: -37978, Left Front: -40626
+
+
+[INFO] [1455233135.829773]: Encoder Left Rear: -40648, Right Rear: -38082
+
+
+
